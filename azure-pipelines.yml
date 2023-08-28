@@ -1,19 +1,19 @@
-# Starter pipeline
-# Start with a minimal pipeline that you can customize to build and deploy your code.
-# Add steps that build, run tests, deploy, and more:
-# https://aka.ms/yaml
-
 trigger:
-- master
+- '*'
+
+pr:
+- '*'
 
 pool:
-  vmImage: ubuntu-latest
+  vmImage: 'ubuntu-latest'
 
 steps:
-- script: echo Hello, world!
-  displayName: 'Run a one-line script'
+- script: |
+    git config --global user.email "felixschreiber89@gmail.com.com"
+    git config --global user.name "SchreibSchreib"
+  displayName: 'Set git config'
 
 - script: |
-    echo Add other tasks to build, test, and deploy your project.
-    echo See https://aka.ms/yaml
-  displayName: 'Run a multi-line script'
+    git remote add github https://github.com/SchreibSchreib/WeatherApp.git
+    git push github HEAD:main
+  displayName: 'Sync with GitHub'
