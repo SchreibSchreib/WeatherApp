@@ -1,0 +1,1 @@
+C:\Users\felix\OneDrive\Visual Studio\source\repos\WetterAppView\WetterAppView\obj\Debug\net7.0-windows\01_WetterApp.UI.csproj.AssemblyReference.cache

@@ -5,8 +5,104 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:_01_WetterApp.UI"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-
+        MinHeight="720"
+        MinWidth="1280"
+        MaxHeight="1080"
+        MaxWidth="1920"
+        Title="MainWindow" Height="1080" Width="1920">
+    <Grid Background="MediumVioletRed">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0.5*"/>
+            <ColumnDefinition Width="1265"/>
+            <ColumnDefinition Width="0.5*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.5*"/>
+            <RowDefinition Height="680"/>
+            <RowDefinition Height="0.5*"/>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="1" Grid.Column="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0.3*"/>
+                <ColumnDefinition Width="2*"/>
+                <ColumnDefinition Width="0.3*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="0.06*"/>
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="0.06*"/>
+            </Grid.RowDefinitions>
+            <Border Grid.ColumnSpan="3" Grid.RowSpan="3" BorderThickness="20" CornerRadius="200" BorderBrush="Aqua" Background="#7CFAEBD7"/>
+            <Grid Grid.Row="1" Grid.Column="1">
+                <StackPanel>
+                    <TextBlock Text="Huhn" FontSize="40" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="50,20,50,10"/>
+                    <TextBox Height="40" Margin="200,10"/>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
+                        <CheckBox Margin="0,0,0,0" Grid.Column="1" HorizontalAlignment="Center">
+                            <CheckBox.LayoutTransform>
+                                <ScaleTransform ScaleX="2" ScaleY="2"/>
+                            </CheckBox.LayoutTransform>
+                            <CheckBox.Resources>
+                                <Style TargetType="Border">
+                                    <Setter Property="CornerRadius" Value="10"/>
+                                </Style>
+                            </CheckBox.Resources>
+                        </CheckBox>
+                    </Grid>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
+                        <TextBlock Margin="0,5" Text="Als Heimatstadt" Grid.Column="1" HorizontalAlignment="Center" FontSize="25"/>
+                    </Grid>
+                    <Button Content="Standort finden" FontSize="30" Height="70" Margin="100,10">
+                        <Button.Resources>
+                            <Style TargetType="Border">
+                                <Setter Property="CornerRadius" Value="200"/>
+                            </Style>
+                        </Button.Resources>
+                        <Button.Background>
+                            <RadialGradientBrush>
+                                <GradientStop Color="#FFDCE1E4" Offset="1"/>
+                                <GradientStop Color="#FF30CC1A" Offset="0"/>
+                            </RadialGradientBrush>
+                        </Button.Background>
+                    </Button>
+                    <Grid Margin="10" Height="235">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="1*"/>
+                            <RowDefinition Height="0.7*"/>
+                        </Grid.RowDefinitions>
+                    </Grid>
+                    <Button Content="Aktuelles Wetter" FontSize="30" Height="70" Margin="100,0">
+                        <Button.Resources>
+                            <Style TargetType="Border">
+                                <Setter Property="CornerRadius" Value="200"/>
+                            </Style>
+                        </Button.Resources>
+                        <Button.Background>
+                            <RadialGradientBrush>
+                                <GradientStop Color="#FFDCE1E4" Offset="1"/>
+                                <GradientStop Color="#FF30CC1A" Offset="0"/>
+                            </RadialGradientBrush>
+                        </Button.Background>
+                    </Button>
+                </StackPanel>
+            </Grid>
+        </Grid>
     </Grid>
 </Window>
