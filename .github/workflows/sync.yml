@@ -1,0 +1,23 @@
+name: Mirror to Azure DevOps
+
+on:
+  push:
+    branches:
+      - '*'  
+
+jobs:
+  mirror:
+    runs-on: ubuntu-latest  # Verwende das gewünschte Betriebssystem
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+      
+      - name: Push to Azure DevOps
+        run: |
+          git config --global user.email "felixschreiber89@gmail.com"
+          git config --global user.name "SchreibSchreib"
+          git remote add azure <https://dev.azure.com/Waetherorg/_git/WeatherApp>
+          git push azure HEAD:refs/heads/$GITHUB_REF_SLASH
+        env:
+          AZURE_DEVOPS_EXT_PAT: ${{ secrets.AZURE_DEVOPS_EXT_PAT }}  # Verwende ein GitHub Secret für den Zugriff
