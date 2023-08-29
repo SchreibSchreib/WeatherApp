@@ -13,4 +13,8 @@
     <Folder Include="Windows\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\04_WetterApp.Models\04_WetterApp.Models.csproj" />
+  </ItemGroup>
+
 </Project>

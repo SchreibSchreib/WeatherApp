@@ -7,14 +7,27 @@
   "targets": {
     ".NETCoreApp,Version=v7.0": {
       "01_WetterApp.UI/1.0.0": {
+        "dependencies": {
+          "04_WetterApp.Models": "1.0.0"
+        },
         "runtime": {
           "01_WetterApp.UI.dll": {}
+        }
+      },
+      "04_WetterApp.Models/1.0.0": {
+        "runtime": {
+          "04_WetterApp.Models.dll": {}
         }
       }
     }
   },
   "libraries": {
     "01_WetterApp.UI/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "04_WetterApp.Models/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

@@ -1,8 +1,16 @@
 {
   "version": 2,
-  "dgSpecHash": "oKl2pxSJIG9i60NpSHyZb2r+PoG+SrUrxNi3a/lvWvSEDqhbISz4H3rWJuGw5WsbD5B2jVHuBfWkg6kL8XB8fQ==",
+  "dgSpecHash": "DKA1FNOQte7uqeJjwF+kGKCH4xWhrzJitohwAXu/F635lQUjAI04HZhAof43EiwtUw12Z/herdlWBKCiHS+7/g==",
   "success": true,
   "projectFilePath": "C:\\Users\\felix\\OneDrive\\Visual Studio\\source\\repos\\WetterApp\\04_WetterApp.Models\\04_WetterApp.Models.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\felix\\.nuget\\packages\\microsoft.aspnetcore.openapi\\7.0.7\\microsoft.aspnetcore.openapi.7.0.7.nupkg.sha512",
+    "C:\\Users\\felix\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
+    "C:\\Users\\felix\\.nuget\\packages\\microsoft.openapi\\1.4.3\\microsoft.openapi.1.4.3.nupkg.sha512",
+    "C:\\Users\\felix\\.nuget\\packages\\swashbuckle.aspnetcore\\6.5.0\\swashbuckle.aspnetcore.6.5.0.nupkg.sha512",
+    "C:\\Users\\felix\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.5.0\\swashbuckle.aspnetcore.swagger.6.5.0.nupkg.sha512",
+    "C:\\Users\\felix\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.5.0\\swashbuckle.aspnetcore.swaggergen.6.5.0.nupkg.sha512",
+    "C:\\Users\\felix\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.5.0\\swashbuckle.aspnetcore.swaggerui.6.5.0.nupkg.sha512"
+  ],
   "logs": []
 }

@@ -5,13 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
+using _04_WetterApp.Models.UI.ModelsContainer;
 
 namespace _01_WetterApp.UI
 {
@@ -22,7 +16,20 @@ namespace _01_WetterApp.UI
     {
         public MainWindow()
         {
+            _currentTown = new HomeTownInformation();
             InitializeComponent();
+        }
+
+        private HomeTownInformation _currentTown;
+
+        private void Location_Initialized(object sender, EventArgs e)
+        {
+            var thisTextbox = sender as TextBox;
+            if (thisTextbox == null)
+            {
+                return;
+            }
+            thisTextbox.Text = _currentTown.NameOfTown;
         }
     }
 }

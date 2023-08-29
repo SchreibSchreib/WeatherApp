@@ -19,3 +19,6 @@ C:\Users\felix\OneDrive\Visual Studio\source\repos\WetterApp\01_WetterApp.UI\obj
 C:\Users\felix\OneDrive\Visual Studio\source\repos\WetterApp\01_WetterApp.UI\obj\Debug\net7.0-windows\01_WetterApp.UI.pdb
 C:\Users\felix\OneDrive\Visual Studio\source\repos\WetterApp\01_WetterApp.UI\obj\Debug\net7.0-windows\01_WetterApp.UI.genruntimeconfig.cache
 C:\Users\felix\OneDrive\Visual Studio\source\repos\WetterApp\01_WetterApp.UI\obj\Debug\net7.0-windows\ref\01_WetterApp.UI.dll
+C:\Users\felix\OneDrive\Visual Studio\source\repos\WetterApp\01_WetterApp.UI\bin\Debug\net7.0-windows\04_WetterApp.Models.dll
+C:\Users\felix\OneDrive\Visual Studio\source\repos\WetterApp\01_WetterApp.UI\bin\Debug\net7.0-windows\04_WetterApp.Models.pdb
+C:\Users\felix\OneDrive\Visual Studio\source\repos\WetterApp\01_WetterApp.UI\obj\Debug\net7.0-windows\01_WetterApp.UI.csproj.CopyComplete
