@@ -1,10 +1,11 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>net7.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <RootNamespace>_02_WetterApp.Web</RootNamespace>
+    <UserSecretsId>e8eb0052-ab38-42c2-b755-10e84be48594</UserSecretsId>
   </PropertyGroup>
 
   <ItemGroup>

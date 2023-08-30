@@ -107,6 +107,16 @@
         "frameworkReferences": [
           "Microsoft.AspNetCore.App"
         ]
+      },
+      "04_WetterApp.Models/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/04_WetterApp.Models.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/04_WetterApp.Models.dll": {}
+        }
       }
     }
   },
@@ -460,10 +470,16 @@
         "swashbuckle.aspnetcore.swaggerui.6.5.0.nupkg.sha512",
         "swashbuckle.aspnetcore.swaggerui.nuspec"
       ]
+    },
+    "04_WetterApp.Models/1.0.0": {
+      "type": "project",
+      "path": "../04_WetterApp.Models/04_WetterApp.Models.csproj",
+      "msbuildProject": "../04_WetterApp.Models/04_WetterApp.Models.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net7.0": [
+      "04_WetterApp.Models >= 1.0.0",
       "Microsoft.AspNetCore.OpenApi >= 7.0.7",
       "Swashbuckle.AspNetCore >= 6.5.0"
     ]
@@ -501,7 +517,11 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\felix\\OneDrive\\Visual Studio\\source\\repos\\WetterApp\\04_WetterApp.Models\\04_WetterApp.Models.csproj": {
+              "projectPath": "C:\\Users\\felix\\OneDrive\\Visual Studio\\source\\repos\\WetterApp\\04_WetterApp.Models\\04_WetterApp.Models.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

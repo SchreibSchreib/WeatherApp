@@ -22,3 +22,15 @@ C:\Users\felix\OneDrive\Visual Studio\source\repos\WetterApp\01_WetterApp.UI\obj
 C:\Users\felix\OneDrive\Visual Studio\source\repos\WetterApp\01_WetterApp.UI\bin\Debug\net7.0-windows\04_WetterApp.Models.dll
 C:\Users\felix\OneDrive\Visual Studio\source\repos\WetterApp\01_WetterApp.UI\bin\Debug\net7.0-windows\04_WetterApp.Models.pdb
 C:\Users\felix\OneDrive\Visual Studio\source\repos\WetterApp\01_WetterApp.UI\obj\Debug\net7.0-windows\01_WetterApp.UI.csproj.CopyComplete
+C:\Users\felix\OneDrive\Visual Studio\source\repos\WetterApp\01_WetterApp.UI\bin\Debug\net7.0-windows\02_WetterApp.Web.deps.json
+C:\Users\felix\OneDrive\Visual Studio\source\repos\WetterApp\01_WetterApp.UI\bin\Debug\net7.0-windows\02_WetterApp.Web.runtimeconfig.json
+C:\Users\felix\OneDrive\Visual Studio\source\repos\WetterApp\01_WetterApp.UI\bin\Debug\net7.0-windows\appsettings.Development.json
+C:\Users\felix\OneDrive\Visual Studio\source\repos\WetterApp\01_WetterApp.UI\bin\Debug\net7.0-windows\appsettings.json
+C:\Users\felix\OneDrive\Visual Studio\source\repos\WetterApp\01_WetterApp.UI\bin\Debug\net7.0-windows\02_WetterApp.Web.exe
+C:\Users\felix\OneDrive\Visual Studio\source\repos\WetterApp\01_WetterApp.UI\bin\Debug\net7.0-windows\Microsoft.AspNetCore.OpenApi.dll
+C:\Users\felix\OneDrive\Visual Studio\source\repos\WetterApp\01_WetterApp.UI\bin\Debug\net7.0-windows\Microsoft.OpenApi.dll
+C:\Users\felix\OneDrive\Visual Studio\source\repos\WetterApp\01_WetterApp.UI\bin\Debug\net7.0-windows\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\felix\OneDrive\Visual Studio\source\repos\WetterApp\01_WetterApp.UI\bin\Debug\net7.0-windows\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\felix\OneDrive\Visual Studio\source\repos\WetterApp\01_WetterApp.UI\bin\Debug\net7.0-windows\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\felix\OneDrive\Visual Studio\source\repos\WetterApp\01_WetterApp.UI\bin\Debug\net7.0-windows\02_WetterApp.Web.dll
+C:\Users\felix\OneDrive\Visual Studio\source\repos\WetterApp\01_WetterApp.UI\bin\Debug\net7.0-windows\02_WetterApp.Web.pdb
