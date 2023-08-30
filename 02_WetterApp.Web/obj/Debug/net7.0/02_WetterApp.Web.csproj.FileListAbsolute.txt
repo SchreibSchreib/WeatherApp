@@ -31,3 +31,5 @@ C:\Users\felix\OneDrive\Visual Studio\source\repos\WetterApp\02_WetterApp.Web\ob
 C:\Users\felix\OneDrive\Visual Studio\source\repos\WetterApp\02_WetterApp.Web\obj\Debug\net7.0\02_WetterApp.Web.pdb
 C:\Users\felix\OneDrive\Visual Studio\source\repos\WetterApp\02_WetterApp.Web\obj\Debug\net7.0\02_WetterApp.Web.genruntimeconfig.cache
 C:\Users\felix\OneDrive\Visual Studio\source\repos\WetterApp\02_WetterApp.Web\obj\Debug\net7.0\ref\02_WetterApp.Web.dll
+C:\Users\felix\OneDrive\Visual Studio\source\repos\WetterApp\02_WetterApp.Web\bin\Debug\net7.0\04_WetterApp.Models.dll
+C:\Users\felix\OneDrive\Visual Studio\source\repos\WetterApp\02_WetterApp.Web\bin\Debug\net7.0\04_WetterApp.Models.pdb

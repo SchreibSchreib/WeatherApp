@@ -8,7 +8,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\02_WetterApp.Web\02_WetterApp.Web.csproj" />
+    <Folder Include="ClassesUsedByData\" />
+    <Folder Include="ClassesUsedByWeb\" />
   </ItemGroup>
 
 </Project>

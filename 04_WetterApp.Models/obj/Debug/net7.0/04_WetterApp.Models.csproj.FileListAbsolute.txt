@@ -10,11 +10,3 @@ C:\Users\felix\OneDrive\Visual Studio\source\repos\WetterApp\04_WetterApp.Models
 C:\Users\felix\OneDrive\Visual Studio\source\repos\WetterApp\04_WetterApp.Models\obj\Debug\net7.0\refint\04_WetterApp.Models.dll
 C:\Users\felix\OneDrive\Visual Studio\source\repos\WetterApp\04_WetterApp.Models\obj\Debug\net7.0\04_WetterApp.Models.pdb
 C:\Users\felix\OneDrive\Visual Studio\source\repos\WetterApp\04_WetterApp.Models\obj\Debug\net7.0\ref\04_WetterApp.Models.dll
-C:\Users\felix\OneDrive\Visual Studio\source\repos\WetterApp\04_WetterApp.Models\bin\Debug\net7.0\02_WetterApp.Web.deps.json
-C:\Users\felix\OneDrive\Visual Studio\source\repos\WetterApp\04_WetterApp.Models\bin\Debug\net7.0\02_WetterApp.Web.runtimeconfig.json
-C:\Users\felix\OneDrive\Visual Studio\source\repos\WetterApp\04_WetterApp.Models\bin\Debug\net7.0\appsettings.Development.json
-C:\Users\felix\OneDrive\Visual Studio\source\repos\WetterApp\04_WetterApp.Models\bin\Debug\net7.0\appsettings.json
-C:\Users\felix\OneDrive\Visual Studio\source\repos\WetterApp\04_WetterApp.Models\bin\Debug\net7.0\02_WetterApp.Web.exe
-C:\Users\felix\OneDrive\Visual Studio\source\repos\WetterApp\04_WetterApp.Models\bin\Debug\net7.0\02_WetterApp.Web.dll
-C:\Users\felix\OneDrive\Visual Studio\source\repos\WetterApp\04_WetterApp.Models\bin\Debug\net7.0\02_WetterApp.Web.pdb
-C:\Users\felix\OneDrive\Visual Studio\source\repos\WetterApp\04_WetterApp.Models\obj\Debug\net7.0\04_WetterApp.Models.csproj.CopyComplete

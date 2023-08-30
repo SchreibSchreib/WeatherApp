@@ -2,18 +2,18 @@
 
 namespace _02_WetterApp.Web.APIConnections
 {
-    public class GeolocationAPI
+    public class GeolocationAPIKey
     {
-        public GeolocationAPI()
+        public GeolocationAPIKey()
         {
-            Key = GetKey();
+            Get = GetKey();
         }
 
-        public string Key { get; private set; }
+        public string Get { get; private set; }
 
         private string GetKey()
         {
-            IConfiguration secretApi = new ConfigurationBuilder().AddUserSecrets<GetLocation>().Build();
+            IConfiguration secretApi = new ConfigurationBuilder().AddUserSecrets<LocationData>().Build();
 
             if (secretApi == null || secretApi["ApiKey"] == null)
             {

@@ -1,10 +1,10 @@
 ﻿using System.Net;
 
-namespace _02_WetterApp.Web.APIConnections
+namespace _02_WetterApp.Web.APIRequests
 {
-    public class Ipify
+    public class UserIP
     {
-        public Ipify()
+        public UserIP()
         {
             IpV4Address = GetIPAdress();
         }
