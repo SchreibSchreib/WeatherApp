@@ -1,4 +1,5 @@
-﻿using System;
+﻿using _03_WetterApp.Models.ClassesUsedFromData;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,7 +21,7 @@ namespace _01_WetterApp.UI
 
         private void Location_Initialized(object sender, EventArgs e)
         {
-
+            HomeTown currentHome = new HomeTown();
         }
     }
 }

@@ -1,3 +1,0 @@
-﻿<Project>
-  <Import Project="..\buildMultiTargeting\02_WetterApp.Web.props" />
-</Project>
