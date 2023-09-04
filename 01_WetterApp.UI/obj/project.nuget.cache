@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "1X6oxcE3EYNrBB4IOicN4lCAte9LVJXHmhndHPS749qenFpVjhTyA4JBoRbETniUn33wnC2xXWciU5tJFUkP4g==",
+  "dgSpecHash": "0XAXzuSA/2iBY+2nFktxllgFke8sFu+tsgZn1MPousSWIxkBf/IrJwgtACOBK6Ydn4K+hIRqvQo9Zg9vPHuMkA==",
   "success": true,
   "projectFilePath": "C:\\Users\\felix\\OneDrive\\Visual Studio\\source\\repos\\WetterApp\\01_WetterApp.UI\\01_WetterApp.UI.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\felix\\.nuget\\packages\\ipgeolocation.ipgeolocation\\1.0.5\\ipgeolocation.ipgeolocation.1.0.5.nupkg.sha512",
     "C:\\Users\\felix\\.nuget\\packages\\microsoft.extensions.configuration\\6.0.0\\microsoft.extensions.configuration.6.0.0.nupkg.sha512",
     "C:\\Users\\felix\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\6.0.0\\microsoft.extensions.configuration.abstractions.6.0.0.nupkg.sha512",
     "C:\\Users\\felix\\.nuget\\packages\\microsoft.extensions.configuration.fileextensions\\6.0.0\\microsoft.extensions.configuration.fileextensions.6.0.0.nupkg.sha512",
@@ -13,6 +14,7 @@
     "C:\\Users\\felix\\.nuget\\packages\\microsoft.extensions.fileproviders.physical\\6.0.0\\microsoft.extensions.fileproviders.physical.6.0.0.nupkg.sha512",
     "C:\\Users\\felix\\.nuget\\packages\\microsoft.extensions.filesystemglobbing\\6.0.0\\microsoft.extensions.filesystemglobbing.6.0.0.nupkg.sha512",
     "C:\\Users\\felix\\.nuget\\packages\\microsoft.extensions.primitives\\6.0.0\\microsoft.extensions.primitives.6.0.0.nupkg.sha512",
+    "C:\\Users\\felix\\.nuget\\packages\\newtonsoft.json\\11.0.2\\newtonsoft.json.11.0.2.nupkg.sha512",
     "C:\\Users\\felix\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
     "C:\\Users\\felix\\.nuget\\packages\\system.text.encodings.web\\6.0.0\\system.text.encodings.web.6.0.0.nupkg.sha512",
     "C:\\Users\\felix\\.nuget\\packages\\system.text.json\\6.0.0\\system.text.json.6.0.0.nupkg.sha512"

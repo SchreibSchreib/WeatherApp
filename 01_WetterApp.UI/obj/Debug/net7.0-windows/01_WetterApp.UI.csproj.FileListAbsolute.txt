@@ -33,3 +33,5 @@ C:\Users\felix\OneDrive\Visual Studio\source\repos\WetterApp\01_WetterApp.UI\bin
 C:\Users\felix\OneDrive\Visual Studio\source\repos\WetterApp\01_WetterApp.UI\bin\Debug\net7.0-windows\03_WetterApp.Models.pdb
 C:\Users\felix\OneDrive\Visual Studio\source\repos\WetterApp\01_WetterApp.UI\bin\Debug\net7.0-windows\02_WetterApp.Data.pdb
 C:\Users\felix\OneDrive\Visual Studio\source\repos\WetterApp\01_WetterApp.UI\obj\Debug\net7.0-windows\01_WetterApp.UI.csproj.CopyComplete
+C:\Users\felix\OneDrive\Visual Studio\source\repos\WetterApp\01_WetterApp.UI\bin\Debug\net7.0-windows\IPGeolocation.dll
+C:\Users\felix\OneDrive\Visual Studio\source\repos\WetterApp\01_WetterApp.UI\bin\Debug\net7.0-windows\Newtonsoft.Json.dll

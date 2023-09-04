@@ -14,11 +14,11 @@ namespace _02_WetterApp.Data.APIConnections
 
         private string GetKey()
         {
-            IConfiguration secretApi = new ConfigurationBuilder().AddUserSecrets<LocationData>().Build();
+            IConfiguration secretApi = new ConfigurationBuilder().AddUserSecrets<GeolocationAPIKey>().Build();
 
             if (secretApi == null || secretApi["ApiKey"] == null)
             {
-                throw new NullReferenceException();
+                throw new InvalidOperationException("API-Key not found in user secrets.");
             }
 
             return secretApi["ApiKey"]!;

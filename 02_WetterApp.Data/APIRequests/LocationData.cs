@@ -20,7 +20,8 @@ namespace _02_WetterApp.Data.APIRequests
         {
             using (HttpClient client = new HttpClient())
             {
-                string url = $"https://api.ipgeolocation.io/ipgeo?apiKey={_apiKey}&ip={_ipAddress}";
+                
+                string url = $"https://api.ipgeolocation.io/ipgeo?apiKey={_apiKey}&ip={_ipAddress.IpV4Address}";
                 HttpResponseMessage response = await client.GetAsync(url);
 
                 if (response.IsSuccessStatusCode)
