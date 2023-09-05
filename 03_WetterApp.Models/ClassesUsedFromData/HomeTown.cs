@@ -10,7 +10,8 @@ namespace _03_WetterApp.Models.ClassesUsedFromData
             ProcessLocationData currentHome = new ProcessLocationData();
         }
 
-        public string City { get; set; }
-        public string CountryName { get; set; }
+        public string CountryName { get; private set; }
+        public string City { get; private set; }
+
     }
 }

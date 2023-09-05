@@ -1,4 +1,6 @@
 ﻿using _02_WetterApp.Data.APIConnections;
+using IPGeolocation;
+using System.Diagnostics;
 
 namespace _02_WetterApp.Data.APIRequests
 {
@@ -8,31 +10,66 @@ namespace _02_WetterApp.Data.APIRequests
         {
             _ipAddress = ipAddress;
             _apiKey = geolocationAPI.Get;
-            JsonContent = GetJsonContent().Result;
+            JsonContent = GetJsonContent();
         }
 
         private readonly UserIP _ipAddress;
         private readonly string _apiKey;
 
-        public string JsonContent { get; private set; }
+        public Dictionary<string, string> JsonContent { get; private set; }
 
-        private async Task<string> GetJsonContent()
+        private Dictionary<string, string> GetJsonContent()
         {
-            using (HttpClient client = new HttpClient())
+            Dictionary<string, string> geoData = new Dictionary<string, string>();
+            try
             {
-                
-                string url = $"https://api.ipgeolocation.io/ipgeo?apiKey={_apiKey}&ip={_ipAddress.IpV4Address}";
-                HttpResponseMessage response = await client.GetAsync(url);
+                IPGeolocationAPI api = new IPGeolocationAPI(_apiKey);
+                GeolocationParams geoParams = new GeolocationParams();
+                geoParams.SetIPAddress(_ipAddress.IpV4Address);
+                geoParams.SetFields("time_zone,currency,city");
 
-                if (response.IsSuccessStatusCode)
+                Geolocation geolocation = api.GetGeolocation(geoParams);
+
+                if (geolocation.GetStatus() == 200)
                 {
-                    return await response.Content.ReadAsStringAsync();
+                    geoData.Add("Country", geolocation.GetCountryName());
+                    geoData.Add("Capital", geolocation.GetCountryCapital());
+                    geoData.Add("City", geolocation.GetCity());
+                    geoData.Add("Currency", geolocation.GetCurrency().GetName());
+                    geoData.Add("TimeZone", geolocation.GetTimezone().GetName());
+
+                    return geoData;
                 }
                 else
                 {
-                    throw new Exception($"API request failed with status code: {response.StatusCode}");
+                    geoData = GetDefaultGeoData();
+
+                    return geoData;
                 }
             }
+            catch (Exception)
+            {
+                Debug.WriteLine("Connection to IP-Geodata failed");
+                Debug.WriteLine("Using default values");
+
+                geoData = GetDefaultGeoData();
+
+                return geoData;
+            }
+        }
+
+        private Dictionary<string, string> GetDefaultGeoData()
+        {
+            Dictionary<string, string> defaultGeoData = new Dictionary<string, string>
+            {
+                { "Country", "Germany" },
+                { "Capital", "Berlin" },
+                { "City", "Berlin" },
+                { "Currency", "Euro" },
+                { "TimeZone", "EU" }
+            };
+
+            return defaultGeoData;
         }
     }
 }
