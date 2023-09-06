@@ -13,4 +13,12 @@
     <Folder Include="Windows\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Include="..\.editorconfig" Link=".editorconfig" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\03_WetterApp.Models\03_WetterApp.Models.csproj" />
+  </ItemGroup>
+
 </Project>

@@ -36,7 +36,7 @@
             <Grid Grid.Row="1" Grid.Column="1">
                 <StackPanel>
                     <TextBlock Text="Huhn" FontSize="40" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="50,20,50,10"/>
-                    <TextBox Height="40" Margin="200,10"/>
+                    <TextBox Initialized="Location_Initialized" x:Name="Location" Height="40" Margin="200,10"/>
                     <Grid>
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition/>
