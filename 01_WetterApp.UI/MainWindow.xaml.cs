@@ -5,7 +5,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
-using System.Windows.Controls;
+using _03_WetterApp.Models;
+using _03_WetterApp.Models.ClassesUsedByUI;
 
 namespace _01_WetterApp.UI
 {
@@ -21,7 +22,9 @@ namespace _01_WetterApp.UI
 
         private void Location_Initialized(object sender, EventArgs e)
         {
-            HomeTown currentHome = new HomeTown();
+            User currentUser = new User();
+
+            Location.Text = currentUser.ActualTime.ToString();
         }
     }
 }

@@ -5,13 +5,14 @@ namespace _03_WetterApp.Models.ClassesUsedFromData
 {
     public class HomeTown
     {
-        public HomeTown()
+        public HomeTown(ProcessLocationData currentLocation)
         {
-            ProcessLocationData currentHome = new ProcessLocationData();
+            CountryName = currentLocation.Country;
+            GetName = currentLocation.City;
         }
 
         public string CountryName { get; private set; }
-        public string City { get; private set; }
+        public string GetName { get; private set; }
 
     }
 }

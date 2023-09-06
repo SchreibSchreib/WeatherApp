@@ -1,4 +1,5 @@
-﻿using _03_WetterApp.Models.ClassesUsedFromData;
+﻿using _02_WetterApp.Data.Web.DataProcessing;
+using _03_WetterApp.Models.ClassesUsedFromData;
 
 namespace _03_WetterApp.Models.ClassesUsedByUI
 {
@@ -6,13 +7,16 @@ namespace _03_WetterApp.Models.ClassesUsedByUI
     {
         public User()
         {
-
+            ProcessLocationData currentLocation = new ProcessLocationData();
+            Capital = new CountryCapital(currentLocation);
+            HomeTown = new HomeTown(currentLocation);
+            ActualTime = DateTime.Now;
         }
 
-        //public DefaultTown DefaultTown { get; private set; }
+        public CountryCapital Capital { get; private set; }
         public HomeTown HomeTown { get; private set; }
         //public WeatherInformation ActualWeatherInformation { get; private set; }
-        //public DateTime ActualTime { get; private set; }
+        public DateTime ActualTime { get; private set; }
 
     }
 }

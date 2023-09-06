@@ -26,7 +26,12 @@ namespace _02_WetterApp.Data.APIRequests
                 IPGeolocationAPI api = new IPGeolocationAPI(_apiKey);
                 GeolocationParams geoParams = new GeolocationParams();
                 geoParams.SetIPAddress(_ipAddress.IpV4Address);
-                geoParams.SetFields("time_zone,currency,city");
+                geoParams.SetFields(
+                    "country_name," +
+                    "city," +
+                    "country_capital," +
+                    "currency," +
+                    "time_zone");
 
                 Geolocation geolocation = api.GetGeolocation(geoParams);
 
