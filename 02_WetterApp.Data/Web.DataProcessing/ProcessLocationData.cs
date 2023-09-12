@@ -13,6 +13,8 @@ namespace _02_WetterApp.Data.Web.DataProcessing
             City = _locationData["City"];
             Currency = _locationData["Currency"];
             TimeZone = _locationData["TimeZone"];
+            Latitude = _locationData["Latitude"];
+            Longitude = _locationData["Longitude"];
         }
 
         private Dictionary<string, string> _locationData;
@@ -22,5 +24,7 @@ namespace _02_WetterApp.Data.Web.DataProcessing
         public string City { get; private set; }
         public string Currency { get; private set; }
         public string TimeZone { get; private set; }
+        public string Latitude { get; private set; }
+        public string Longitude { get; private set; }
     }
 }
