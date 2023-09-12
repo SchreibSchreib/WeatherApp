@@ -7,7 +7,7 @@ namespace _02_WetterApp.Data.Web.DataProcessing
     {
         public ProcessLocationData()
         {
-            _locationData = new LocationData(new UserIP(), new GeolocationAPIKey()).JsonContent;
+            _locationData = new LocationData(new UserIP(), new GeolocationAPIKey()).Content;
             Country = _locationData["Country"];
             CountryCapital = _locationData["Capital"];
             City = _locationData["City"];

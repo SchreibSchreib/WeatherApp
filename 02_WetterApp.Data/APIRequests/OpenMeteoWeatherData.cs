@@ -2,50 +2,66 @@
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using Newtonsoft.Json;
 using static System.Net.WebRequestMethods;
 
 namespace _02_WetterApp.Data.APIRequests
 {
-    internal class OpenMeteoWeatherData
+    public class OpenMeteoWeatherData
     {
-        public OpenMeteoWeatherData(ProcessLocationData currentData)
+        public OpenMeteoWeatherData(ProcessLocationData currentLocation)
         {
-            _latitude = currentData.Latitude;
-            _longitude = currentData.Longitude;
-            JsonContent = GetContent().Result;
+            _latitude = currentLocation.Latitude;
+            _longitude = currentLocation.Longitude;
+            Content = GetContent().Result;
         }
 
         private string _latitude;
         private string _longitude;
 
-        public string JsonContent { get; private set; }
+        public Dictionary<string, string> Content { get; private set; }
 
-        private async Task<string> GetContent()
+        private async Task<Dictionary<string, string>> GetContent()
         {
             string url = $"https://api.open-meteo.com/v1/forecast?latitude={_latitude}&longitude={_longitude}&hourly=temperature_2m,apparent_temperature,precipitation_probability,rain,snowfall,snow_depth";
 
             using (HttpClient client = new HttpClient())
             {
 
+                client.Timeout = TimeSpan.FromSeconds(10);
                 HttpResponseMessage response = await client.GetAsync(url);
 
                 if (response.IsSuccessStatusCode)
                 {
                     Debug.WriteLine("Successful connected to OpenMeteo");
                     Debug.WriteLine("Getting WeatherData");
-                    return await response.Content.ReadAsStringAsync();
+                    string jsonContent = await response.Content.ReadAsStringAsync();
+                    Debug.WriteLine("Deserializing...");
+                    Dictionary<string, string> weatherData = JsonConvert.DeserializeObject<Dictionary<string, string>>(jsonContent);
+
+                    return weatherData;
                 }
                 else
                 {
                     Debug.WriteLine("Connection to OpenMeteo failed");
                     Debug.WriteLine("Using default weather instead");
-                    string defaultWeatherData = "{'temperature_2m': 20, 'apparent_temperature': 20, 'precipitation_probability': 0, 'rain': 0, 'snowfall': 0, 'snow_depth': 0}";
+                    Dictionary<string, string> defaultWeatherData = GetDefaultWeather();
+
                     return defaultWeatherData;
                 }
             }
+        }
+        private Dictionary<string, string> GetDefaultWeather()
+        {
+            return new Dictionary<string, string>
+            {
+                {"Temperature2m", "20.0"},
+                {"ApparentTemperature", "20.0"},
+                {"PrecipitationProbability", "0.0"},
+                {"Rain", "0.0"},
+                {"Snowfall", "0.0"},
+                {"SnowDepth", "0.0"}
+            };
         }
     }
 }

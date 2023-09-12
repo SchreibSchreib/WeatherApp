@@ -10,15 +10,15 @@ namespace _02_WetterApp.Data.APIRequests
         {
             _ipAddress = ipAddress;
             _apiKey = geolocationAPI.Get;
-            JsonContent = GetJsonContent();
+            Content = GetContent();
         }
 
         private readonly UserIP _ipAddress;
         private readonly string _apiKey;
 
-        public Dictionary<string, string> JsonContent { get; private set; }
+        public Dictionary<string, string> Content { get; private set; }
 
-        private Dictionary<string, string> GetJsonContent()
+        private Dictionary<string, string> GetContent()
         {
             Dictionary<string, string> geoData = new Dictionary<string, string>();
             try
