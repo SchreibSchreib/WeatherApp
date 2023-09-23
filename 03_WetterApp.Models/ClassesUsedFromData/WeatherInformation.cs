@@ -12,7 +12,7 @@ namespace _03_WetterApp.Models.ClassesUsedFromData
     {
         public WeatherInformation(ProcessLocationData currentLocation)
         {
-            OpenMeteoWeatherData rawWeatherData = new OpenMeteoWeatherData(currentLocation);
+            WeatherApiData rawWeatherData = new WeatherApiData(currentLocation);
             _proccessedWeatherData = new ProcessWeatherData(rawWeatherData);
         }
 

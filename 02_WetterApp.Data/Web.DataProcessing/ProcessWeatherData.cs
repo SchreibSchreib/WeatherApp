@@ -9,7 +9,7 @@ namespace _02_WetterApp.Data.Web.DataProcessing
 {
     public class ProcessWeatherData
     {
-        public ProcessWeatherData(OpenMeteoWeatherData currentWeather)
+        public ProcessWeatherData(WeatherApiData currentWeather)
         {
             _weatherData = currentWeather.Content;
             Temperature = _weatherData["temperature_2m"];
