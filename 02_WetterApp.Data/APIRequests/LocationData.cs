@@ -10,15 +10,15 @@ namespace _02_WetterApp.Data.APIRequests
         {
             _ipAddress = ipAddress;
             _apiKey = geolocationAPI.Get;
-            JsonContent = GetJsonContent();
+            Content = GetContent();
         }
 
         private readonly UserIP _ipAddress;
         private readonly string _apiKey;
 
-        public Dictionary<string, string> JsonContent { get; private set; }
+        public Dictionary<string, string> Content { get; private set; }
 
-        private Dictionary<string, string> GetJsonContent()
+        private Dictionary<string, string> GetContent()
         {
             Dictionary<string, string> geoData = new Dictionary<string, string>();
             try
@@ -31,7 +31,9 @@ namespace _02_WetterApp.Data.APIRequests
                     "city," +
                     "country_capital," +
                     "currency," +
-                    "time_zone");
+                    "time_zone," +
+                    "latitude," +
+                    "longitude");
 
                 Geolocation geolocation = api.GetGeolocation(geoParams);
 
@@ -42,6 +44,8 @@ namespace _02_WetterApp.Data.APIRequests
                     geoData.Add("City", geolocation.GetCity());
                     geoData.Add("Currency", geolocation.GetCurrency().GetName());
                     geoData.Add("TimeZone", geolocation.GetTimezone().GetName());
+                    geoData.Add("Latitude", geolocation.GetLatitude());
+                    geoData.Add("Longitude", geolocation.GetLongitude());
 
                     return geoData;
                 }
@@ -71,7 +75,9 @@ namespace _02_WetterApp.Data.APIRequests
                 { "Capital", "Berlin" },
                 { "City", "Berlin" },
                 { "Currency", "Euro" },
-                { "TimeZone", "EU" }
+                { "TimeZone", "EU" },
+                {"Latitude", "52,5244" },
+                {"Longitude", "13,4105" }
             };
 
             return defaultGeoData;

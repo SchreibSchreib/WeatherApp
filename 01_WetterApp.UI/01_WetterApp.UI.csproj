@@ -9,6 +9,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Folder Include="Ressources\Backgrounds\" />
     <Folder Include="Sites\" />
     <Folder Include="Windows\" />
   </ItemGroup>

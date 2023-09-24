@@ -1,4 +1,4 @@
-﻿using _03_WetterApp.Models.ClassesUsedFromData;
+﻿using _03_WetterApp.Models.ClassesUsingData;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using System.Windows;
 using _03_WetterApp.Models;
 using _03_WetterApp.Models.ClassesUsedByUI;
+using _02_WetterApp.Data.APIRequests;
 
 namespace _01_WetterApp.UI
 {

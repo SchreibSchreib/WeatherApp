@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace _03_WetterApp.Models.ClassesUsedFromData
+namespace _03_WetterApp.Models.ClassesUsingData
 {
     public class CountryCapital
     {
