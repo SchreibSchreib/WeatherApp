@@ -1,4 +1,4 @@
-﻿using _03_WetterApp.Models.ClassesUsedFromData;
+﻿using _03_WetterApp.Models.ClassesUsingData;
 using System;
 using System.Collections.Generic;
 using System.Linq;

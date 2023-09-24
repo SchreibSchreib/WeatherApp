@@ -11,23 +11,38 @@ namespace _02_WetterApp.Data.Web.DataProcessing
     {
         public ProcessWeatherData(WeatherApiData currentWeather)
         {
-            _weatherData = currentWeather.Content;
-            Temperature = _weatherData["temperature_2m"];
-            ApparentTemperature = _weatherData["apparent_temperature"];
-            PrecipitationPropability = _weatherData["precipitation_probability"];
-            Rain = _weatherData["rain"];
-            SnowFall = _weatherData["snowfall"];
-            SnowDepth = _weatherData["snow_depth"];
+            
         }
+    }
 
-        private Dictionary<string, string> _weatherData;
+    public class Current
+    {
+        public long last_updated_epoch { get; set; }
+        public string last_updated { get; set; }
+        public double temp_c { get; set; }
+        public double temp_f { get; set; }
+        public int is_day { get; set; }
+        public double wind_mph { get; set; }
+        public double wind_kph { get; set; }
+        public int wind_degree { get; set; }
+        public string wind_dir { get; set; }
+        public double pressure_mb { get; set; }
+        public double pressure_in { get; set; }
+        public double precip_mm { get; set; }
+        public double precip_in { get; set; }
+        public int humidity { get; set; }
+        public int cloud { get; set; }
+        public double feelslike_c { get; set; }
+        public double feelslike_f { get; set; }
+        public double vis_km { get; set; }
+        public double vis_miles { get; set; }
+        public double uv { get; set; }
+        public double gust_mph { get; set; }
+        public double gust_kph { get; set; }
+    }
 
-        public string Temperature { get; private set; }
-        public string ApparentTemperature { get; private set; }
-        public string PrecipitationPropability { get; private set; }
-        public string Rain { get; private set; }
-        public string SnowFall { get; private set; }
-        public string SnowDepth { get; private set; }
+    public class ForeCast
+    {
 
     }
 }
