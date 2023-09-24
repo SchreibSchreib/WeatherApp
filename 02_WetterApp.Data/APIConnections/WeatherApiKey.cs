@@ -20,12 +20,12 @@ namespace _02_WetterApp.Data.APIConnections
         {
             IConfiguration secretApi = new ConfigurationBuilder().AddUserSecrets<WeatherApiKey>().Build();
 
-            if (secretApi == null || secretApi["ApiKey"] == null)
+            if (secretApi == null || secretApi["WeatherApiKey"] == null)
             {
                 throw new InvalidOperationException("API-Key not found in user secrets.");
             }
 
-            return secretApi["ApiKeyWeather"]!;
+            return secretApi["WeatherApiKey"]!;
         }
     }
 }

@@ -14,7 +14,8 @@ namespace _03_WetterApp.Models.ClassesUsingData
         {
             WeatherApiData rawWeatherData = new WeatherApiData(currentLocation);
             _proccessedWeatherData = new ProcessWeatherData(rawWeatherData);
-
+            Current = _proccessedWeatherData.GetCurrent();
+            ForeCast = _proccessedWeatherData.GetForecast();
         }
 
         private ProcessWeatherData _proccessedWeatherData;

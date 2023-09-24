@@ -23,7 +23,6 @@ namespace _01_WetterApp.UI
 
         private void Location_Initialized(object sender, EventArgs e)
         {
-            WeatherApiData test = new WeatherApiData(new _02_WetterApp.Data.Web.DataProcessing.ProcessLocationData());
             User currentUser = new User();
 
             Location.Text = currentUser.ActualTime.ToString();
