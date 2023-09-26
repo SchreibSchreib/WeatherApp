@@ -24,8 +24,6 @@ namespace _01_WetterApp.UI
         private void Location_Initialized(object sender, EventArgs e)
         {
             User currentUser = new User();
-
-            Location.Text = currentUser.ActualTime.ToString();
         }
     }
 }
