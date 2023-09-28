@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-E:\VisualStudio\repos\WeatherApp\01_WetterApp.UI\obj\Debug\net7.0-windows\
+E:\VisualStudio\repos\WetterApp\01_WetterApp.UI\obj\Debug\net7.0-windows\
 _01_WetterApp.UI
 none
 false
 TRACE;DEBUG;NET;NET7_0;NETCOREAPP
-E:\VisualStudio\repos\WeatherApp\01_WetterApp.UI\App.xaml
+E:\VisualStudio\repos\WetterApp\01_WetterApp.UI\App.xaml
 11407045341
 
 5-191103210
-211696961030
+211397174671
 MainWindow.xaml;
 
-True
+False
 

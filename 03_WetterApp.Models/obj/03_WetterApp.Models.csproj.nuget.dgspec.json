@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\VisualStudio\\repos\\WeatherApp\\03_WetterApp.Models\\03_WetterApp.Models.csproj": {}
+    "E:\\VisualStudio\\repos\\WetterApp\\03_WetterApp.Models\\03_WetterApp.Models.csproj": {}
   },
   "projects": {
-    "E:\\VisualStudio\\repos\\WeatherApp\\02_WetterApp.Data\\02_WetterApp.Data.csproj": {
+    "E:\\VisualStudio\\repos\\WetterApp\\02_WetterApp.Data\\02_WetterApp.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\VisualStudio\\repos\\WeatherApp\\02_WetterApp.Data\\02_WetterApp.Data.csproj",
+        "projectUniqueName": "E:\\VisualStudio\\repos\\WetterApp\\02_WetterApp.Data\\02_WetterApp.Data.csproj",
         "projectName": "02_WetterApp.Data",
-        "projectPath": "E:\\VisualStudio\\repos\\WeatherApp\\02_WetterApp.Data\\02_WetterApp.Data.csproj",
+        "projectPath": "E:\\VisualStudio\\repos\\WetterApp\\02_WetterApp.Data\\02_WetterApp.Data.csproj",
         "packagesPath": "C:\\Users\\felix\\.nuget\\packages\\",
-        "outputPath": "E:\\VisualStudio\\repos\\WeatherApp\\02_WetterApp.Data\\obj\\",
+        "outputPath": "E:\\VisualStudio\\repos\\WetterApp\\02_WetterApp.Data\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -74,14 +74,14 @@
         }
       }
     },
-    "E:\\VisualStudio\\repos\\WeatherApp\\03_WetterApp.Models\\03_WetterApp.Models.csproj": {
+    "E:\\VisualStudio\\repos\\WetterApp\\03_WetterApp.Models\\03_WetterApp.Models.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\VisualStudio\\repos\\WeatherApp\\03_WetterApp.Models\\03_WetterApp.Models.csproj",
+        "projectUniqueName": "E:\\VisualStudio\\repos\\WetterApp\\03_WetterApp.Models\\03_WetterApp.Models.csproj",
         "projectName": "03_WetterApp.Models",
-        "projectPath": "E:\\VisualStudio\\repos\\WeatherApp\\03_WetterApp.Models\\03_WetterApp.Models.csproj",
+        "projectPath": "E:\\VisualStudio\\repos\\WetterApp\\03_WetterApp.Models\\03_WetterApp.Models.csproj",
         "packagesPath": "C:\\Users\\felix\\.nuget\\packages\\",
-        "outputPath": "E:\\VisualStudio\\repos\\WeatherApp\\03_WetterApp.Models\\obj\\",
+        "outputPath": "E:\\VisualStudio\\repos\\WetterApp\\03_WetterApp.Models\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -103,8 +103,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "E:\\VisualStudio\\repos\\WeatherApp\\02_WetterApp.Data\\02_WetterApp.Data.csproj": {
-                "projectPath": "E:\\VisualStudio\\repos\\WeatherApp\\02_WetterApp.Data\\02_WetterApp.Data.csproj"
+              "E:\\VisualStudio\\repos\\WetterApp\\02_WetterApp.Data\\02_WetterApp.Data.csproj": {
+                "projectPath": "E:\\VisualStudio\\repos\\WetterApp\\02_WetterApp.Data\\02_WetterApp.Data.csproj"
               }
             }
           }

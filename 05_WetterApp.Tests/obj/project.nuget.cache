@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Mjhnr4HRHuLf8CxK3ecv4jwcqcR2b7/lr03I3FBKjwrsVAZvn7XkOI5Dtz2YgYJIHLjxpQQRev3FCRRVSharGA==",
+  "dgSpecHash": "yb3SNwjYZPqGlYxU0cq+HcOSd0w0nZtHvVQa802WU4VGbn2EMESW/cS0f4QyD9QYghkyH0ccJF4XW7hdbW6tNg==",
   "success": true,
-  "projectFilePath": "E:\\VisualStudio\\repos\\WeatherApp\\05_WetterApp.Tests\\05_WetterApp.Tests.csproj",
+  "projectFilePath": "E:\\VisualStudio\\repos\\WetterApp\\05_WetterApp.Tests\\05_WetterApp.Tests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\felix\\.nuget\\packages\\coverlet.collector\\3.2.0\\coverlet.collector.3.2.0.nupkg.sha512",
     "C:\\Users\\felix\\.nuget\\packages\\microsoft.codecoverage\\17.5.0\\microsoft.codecoverage.17.5.0.nupkg.sha512",

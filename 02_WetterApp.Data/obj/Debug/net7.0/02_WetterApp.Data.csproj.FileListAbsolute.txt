@@ -34,3 +34,15 @@ E:\VisualStudio\repos\WeatherApp\02_WetterApp.Data\obj\Debug\net7.0\02_WetterApp
 E:\VisualStudio\repos\WeatherApp\02_WetterApp.Data\obj\Debug\net7.0\refint\02_WetterApp.Data.dll
 E:\VisualStudio\repos\WeatherApp\02_WetterApp.Data\obj\Debug\net7.0\02_WetterApp.Data.pdb
 E:\VisualStudio\repos\WeatherApp\02_WetterApp.Data\obj\Debug\net7.0\ref\02_WetterApp.Data.dll
+E:\VisualStudio\repos\WetterApp\02_WetterApp.Data\bin\Debug\net7.0\02_WetterApp.Data.deps.json
+E:\VisualStudio\repos\WetterApp\02_WetterApp.Data\bin\Debug\net7.0\02_WetterApp.Data.dll
+E:\VisualStudio\repos\WetterApp\02_WetterApp.Data\bin\Debug\net7.0\02_WetterApp.Data.pdb
+E:\VisualStudio\repos\WetterApp\02_WetterApp.Data\obj\Debug\net7.0\02_WetterApp.Data.csproj.AssemblyReference.cache
+E:\VisualStudio\repos\WetterApp\02_WetterApp.Data\obj\Debug\net7.0\02_WetterApp.Data.GeneratedMSBuildEditorConfig.editorconfig
+E:\VisualStudio\repos\WetterApp\02_WetterApp.Data\obj\Debug\net7.0\02_WetterApp.Data.AssemblyInfoInputs.cache
+E:\VisualStudio\repos\WetterApp\02_WetterApp.Data\obj\Debug\net7.0\02_WetterApp.Data.AssemblyInfo.cs
+E:\VisualStudio\repos\WetterApp\02_WetterApp.Data\obj\Debug\net7.0\02_WetterApp.Data.csproj.CoreCompileInputs.cache
+E:\VisualStudio\repos\WetterApp\02_WetterApp.Data\obj\Debug\net7.0\02_WetterApp.Data.dll
+E:\VisualStudio\repos\WetterApp\02_WetterApp.Data\obj\Debug\net7.0\refint\02_WetterApp.Data.dll
+E:\VisualStudio\repos\WetterApp\02_WetterApp.Data\obj\Debug\net7.0\02_WetterApp.Data.pdb
+E:\VisualStudio\repos\WetterApp\02_WetterApp.Data\obj\Debug\net7.0\ref\02_WetterApp.Data.dll
