@@ -13,7 +13,9 @@ namespace _02_WetterApp.Data.Web.DataProcessing
     public static class ProcessWeatherData
     {
         public static WeatherInformation Process(WeatherApiData weatherData)
-            => JsonSerializer.Deserialize<WeatherInformation>(weatherData.Content);
+        {
+            return JsonSerializer.Deserialize<WeatherInformation>(weatherData.Content);
+        }
     }
 
     public class Current
@@ -71,6 +73,6 @@ namespace _02_WetterApp.Data.Web.DataProcessing
     public class ForeCast
     {
         [JsonPropertyName("forecastday")]
-        public List<ForecastDay>? Forecastday { get; private set; }
+        public List<ForecastDay>? Forecastday { get; set; }
     }
 }

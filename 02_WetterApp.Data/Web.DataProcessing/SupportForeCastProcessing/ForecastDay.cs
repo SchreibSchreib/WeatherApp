@@ -13,18 +13,15 @@ namespace _02_WetterApp.Data.Web.DataProcessing.SupportForeCastProcessing
         public string? Date { get; set; }
 
         [JsonPropertyName("date_epoch")]
-        public long DateEpoch { get; set; }
+        public int DateEpoch { get; set; }
 
         [JsonPropertyName("day")]
-        public Dictionary<string, double>? Day { get; set; }
+        public Day? DayData { get; set; }
 
         [JsonPropertyName("astro")]
-        public Dictionary<string, string>? Astro { get; set; }
+        public Astro? AstroData { get; set; }
 
-        [JsonPropertyName("condition")]
-        public Condition? Condition { get; set; }
-
-        [JsonPropertyName("uv")]
-        public double Uv { get; set; }
+        [JsonPropertyName("hour")]
+        public List<Hour>? HourData { get; set; }
     }
 }

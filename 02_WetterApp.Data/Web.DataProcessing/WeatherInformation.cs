@@ -12,9 +12,9 @@ namespace _02_WetterApp.Data.Web.DataProcessing
         public Location? Location { get; set; }
 
         [JsonPropertyName("current")]
-        public Current? Current { get; private set; }
+        public Current? Current { get; set; }
 
         [JsonPropertyName("forecast")]
-        public ForeCast? ForeCast { get; private set; }
+        public ForeCast? ForeCast { get; set; }
     }
 }
