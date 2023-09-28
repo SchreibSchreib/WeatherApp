@@ -10,14 +10,14 @@ namespace _03_WetterApp.Models.ClassesUsedByUI
             ProcessLocationData currentLocation = new ProcessLocationData();
             Capital = new CountryCapital(currentLocation);
             HomeTown = new HomeTown(currentLocation);
-            Weather = new WeatherInformation(currentLocation);
+            Weather = new WeatherData(currentLocation);
 
             ActualTime = DateTime.Now;
         }
 
         public CountryCapital Capital { get; private set; }
         public HomeTown HomeTown { get; private set; }
-        public WeatherInformation Weather { get; private set; }
+        public WeatherData Weather { get; private set; }
         public DateTime ActualTime { get; private set; }
 
     }
