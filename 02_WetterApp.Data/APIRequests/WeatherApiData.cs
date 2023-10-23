@@ -12,17 +12,15 @@ namespace _02_WetterApp.Data.APIRequests
 {
     public class WeatherApiData
     {
-        public WeatherApiData(ProcessLocationData currentLocation)
+        public WeatherApiData()
         {
-            _latitude = currentLocation.Latitude;
-            _longitude = currentLocation.Longitude;
+            _ipV4Adress = new UserIP().IpV4Address;
             _apiKey = new WeatherApiKey().Get;
             Content = GetContent();
         }
 
-        private string _latitude;
-        private string _longitude;
         private string _apiKey;
+        private string _ipV4Adress;
 
         public string Content { get; private set; }
 
@@ -30,7 +28,7 @@ namespace _02_WetterApp.Data.APIRequests
         {
             try
             {
-                string apiUrl = $"http://api.weatherapi.com/v1/forecast.json?key={_apiKey}&q=Magdeburg&days=3&aqi=no&alerts=no";
+                string apiUrl = $"http://api.weatherapi.com/v1/forecast.json?key={_apiKey}&q={_ipV4Adress}&days=3&aqi=no&alerts=no";
                 HttpWebRequest request = (HttpWebRequest)WebRequest.Create(apiUrl);
                 request.Method = "GET";
 

@@ -258,6 +258,16 @@
         "build": {
           "buildTransitive/netcoreapp3.1/_._": {}
         }
+      },
+      "03_WetterApp.Models/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/03_WetterApp.Models.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/03_WetterApp.Models.dll": {}
+        }
       }
     }
   },
@@ -602,10 +612,16 @@
         "system.text.json.nuspec",
         "useSharedDesignerContext.txt"
       ]
+    },
+    "03_WetterApp.Models/1.0.0": {
+      "type": "project",
+      "path": "../03_WetterApp.Models/03_WetterApp.Models.csproj",
+      "msbuildProject": "../03_WetterApp.Models/03_WetterApp.Models.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net7.0": [
+      "03_WetterApp.Models >= 1.0.0",
       "IpGeoLocation.IpGeoLocation >= 1.0.5",
       "Microsoft.Extensions.Configuration.UserSecrets >= 6.0.1"
     ]
@@ -642,7 +658,11 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "E:\\VisualStudio\\repos\\WetterApp\\03_WetterApp.Models\\03_WetterApp.Models.csproj": {
+              "projectPath": "E:\\VisualStudio\\repos\\WetterApp\\03_WetterApp.Models\\03_WetterApp.Models.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
