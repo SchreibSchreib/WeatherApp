@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "1hMZU/eAeyiV6HTikIrsHjmp8jgO0AtHK2BROtOOvFNTiS429FwQhLSz25y04GXGshWqXt2L6ydr8xTAovcUKg==",
+  "dgSpecHash": "o4briFIaCg+8fJkH2b22OYj71ktgWXA6G28qPCtkYEoJbCUXggbuVx2cXlpWxOJsloiS0rcuok692dO3JpbRCw==",
   "success": true,
-  "projectFilePath": "E:\\VisualStudio\\repos\\WetterApp\\02_WetterApp.Data\\02_WetterApp.Data.csproj",
+  "projectFilePath": "E:\\VisualStudio\\repos\\WeatherApp\\02_WetterApp.Data\\02_WetterApp.Data.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\felix\\.nuget\\packages\\ipgeolocation.ipgeolocation\\1.0.5\\ipgeolocation.ipgeolocation.1.0.5.nupkg.sha512",
     "C:\\Users\\felix\\.nuget\\packages\\microsoft.extensions.configuration\\6.0.0\\microsoft.extensions.configuration.6.0.0.nupkg.sha512",

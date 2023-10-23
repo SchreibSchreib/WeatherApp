@@ -993,11 +993,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\VisualStudio\\repos\\WetterApp\\05_WetterApp.Tests\\05_WetterApp.Tests.csproj",
+      "projectUniqueName": "E:\\VisualStudio\\repos\\WeatherApp\\05_WetterApp.Tests\\05_WetterApp.Tests.csproj",
       "projectName": "05_WetterApp.Tests",
-      "projectPath": "E:\\VisualStudio\\repos\\WetterApp\\05_WetterApp.Tests\\05_WetterApp.Tests.csproj",
+      "projectPath": "E:\\VisualStudio\\repos\\WeatherApp\\05_WetterApp.Tests\\05_WetterApp.Tests.csproj",
       "packagesPath": "C:\\Users\\felix\\.nuget\\packages\\",
-      "outputPath": "E:\\VisualStudio\\repos\\WetterApp\\05_WetterApp.Tests\\obj\\",
+      "outputPath": "E:\\VisualStudio\\repos\\WeatherApp\\05_WetterApp.Tests\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

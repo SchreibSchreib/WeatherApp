@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "pj2q1GQmDtoMxeg5IrtBw4SCorvBz3YFOdly03xgMI4CY+lU02cuqurQ/k/lTeLlPdh+LHPkSYt0HSSEzmz8fQ==",
+  "dgSpecHash": "rVwRprCaI1ofMjFv3og3FuOkGgbcEzA4g0F88ceU6dpY379BNwEEdlSFoxZOPElLvLoTZq0T0EEI974nIClyVg==",
   "success": true,
-  "projectFilePath": "E:\\VisualStudio\\repos\\WetterApp\\03_WetterApp.Models\\03_WetterApp.Models.csproj",
+  "projectFilePath": "E:\\VisualStudio\\repos\\WeatherApp\\03_WetterApp.Models\\03_WetterApp.Models.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

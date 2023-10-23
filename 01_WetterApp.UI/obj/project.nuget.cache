@@ -1,23 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "tKuzfUkZ1tp8mKKmxOAvEzZF4QTD3nls+TMyWljY38nFl9cdmfqAI3YmWWpzxbINztY2tVZ3nTM0ET1kmXTTfQ==",
+  "dgSpecHash": "Zs7dkR62YC6RkrzcGUJu/bK0OTzlunkRm+0Nn01aFBPjdTRX1Lxz01Nkaz8zB9QqSIVWnWH88gpu+VWWzBvZGw==",
   "success": true,
-  "projectFilePath": "E:\\VisualStudio\\repos\\WetterApp\\01_WetterApp.UI\\01_WetterApp.UI.csproj",
-  "expectedPackageFiles": [
-    "C:\\Users\\felix\\.nuget\\packages\\ipgeolocation.ipgeolocation\\1.0.5\\ipgeolocation.ipgeolocation.1.0.5.nupkg.sha512",
-    "C:\\Users\\felix\\.nuget\\packages\\microsoft.extensions.configuration\\6.0.0\\microsoft.extensions.configuration.6.0.0.nupkg.sha512",
-    "C:\\Users\\felix\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\6.0.0\\microsoft.extensions.configuration.abstractions.6.0.0.nupkg.sha512",
-    "C:\\Users\\felix\\.nuget\\packages\\microsoft.extensions.configuration.fileextensions\\6.0.0\\microsoft.extensions.configuration.fileextensions.6.0.0.nupkg.sha512",
-    "C:\\Users\\felix\\.nuget\\packages\\microsoft.extensions.configuration.json\\6.0.0\\microsoft.extensions.configuration.json.6.0.0.nupkg.sha512",
-    "C:\\Users\\felix\\.nuget\\packages\\microsoft.extensions.configuration.usersecrets\\6.0.1\\microsoft.extensions.configuration.usersecrets.6.0.1.nupkg.sha512",
-    "C:\\Users\\felix\\.nuget\\packages\\microsoft.extensions.fileproviders.abstractions\\6.0.0\\microsoft.extensions.fileproviders.abstractions.6.0.0.nupkg.sha512",
-    "C:\\Users\\felix\\.nuget\\packages\\microsoft.extensions.fileproviders.physical\\6.0.0\\microsoft.extensions.fileproviders.physical.6.0.0.nupkg.sha512",
-    "C:\\Users\\felix\\.nuget\\packages\\microsoft.extensions.filesystemglobbing\\6.0.0\\microsoft.extensions.filesystemglobbing.6.0.0.nupkg.sha512",
-    "C:\\Users\\felix\\.nuget\\packages\\microsoft.extensions.primitives\\6.0.0\\microsoft.extensions.primitives.6.0.0.nupkg.sha512",
-    "C:\\Users\\felix\\.nuget\\packages\\newtonsoft.json\\11.0.2\\newtonsoft.json.11.0.2.nupkg.sha512",
-    "C:\\Users\\felix\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
-    "C:\\Users\\felix\\.nuget\\packages\\system.text.encodings.web\\6.0.0\\system.text.encodings.web.6.0.0.nupkg.sha512",
-    "C:\\Users\\felix\\.nuget\\packages\\system.text.json\\6.0.0\\system.text.json.6.0.0.nupkg.sha512"
-  ],
+  "projectFilePath": "E:\\VisualStudio\\repos\\WeatherApp\\01_WetterApp.UI\\01_WetterApp.UI.csproj",
+  "expectedPackageFiles": [],
   "logs": []
 }

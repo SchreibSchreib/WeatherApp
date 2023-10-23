@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\VisualStudio\\repos\\WetterApp\\03_WetterApp.Models\\03_WetterApp.Models.csproj",
+      "projectUniqueName": "E:\\VisualStudio\\repos\\WeatherApp\\03_WetterApp.Models\\03_WetterApp.Models.csproj",
       "projectName": "03_WetterApp.Models",
-      "projectPath": "E:\\VisualStudio\\repos\\WetterApp\\03_WetterApp.Models\\03_WetterApp.Models.csproj",
+      "projectPath": "E:\\VisualStudio\\repos\\WeatherApp\\03_WetterApp.Models\\03_WetterApp.Models.csproj",
       "packagesPath": "C:\\Users\\felix\\.nuget\\packages\\",
-      "outputPath": "E:\\VisualStudio\\repos\\WetterApp\\03_WetterApp.Models\\obj\\",
+      "outputPath": "E:\\VisualStudio\\repos\\WeatherApp\\03_WetterApp.Models\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
