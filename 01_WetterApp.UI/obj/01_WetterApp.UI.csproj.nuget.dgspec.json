@@ -33,8 +33,8 @@
           "net7.0-windows7.0": {
             "targetAlias": "net7.0-windows",
             "projectReferences": {
-              "E:\\VisualStudio\\repos\\WetterApp\\03_WetterApp.Models\\03_WetterApp.Models.csproj": {
-                "projectPath": "E:\\VisualStudio\\repos\\WetterApp\\03_WetterApp.Models\\03_WetterApp.Models.csproj"
+              "E:\\VisualStudio\\repos\\WetterApp\\02_WetterApp.Data\\02_WetterApp.Data.csproj": {
+                "projectPath": "E:\\VisualStudio\\repos\\WetterApp\\02_WetterApp.Data\\02_WetterApp.Data.csproj"
               }
             }
           }
@@ -99,7 +99,11 @@
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "E:\\VisualStudio\\repos\\WetterApp\\03_WetterApp.Models\\03_WetterApp.Models.csproj": {
+                "projectPath": "E:\\VisualStudio\\repos\\WetterApp\\03_WetterApp.Models\\03_WetterApp.Models.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -169,11 +173,7 @@
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
-            "projectReferences": {
-              "E:\\VisualStudio\\repos\\WetterApp\\02_WetterApp.Data\\02_WetterApp.Data.csproj": {
-                "projectPath": "E:\\VisualStudio\\repos\\WetterApp\\02_WetterApp.Data\\02_WetterApp.Data.csproj"
-              }
-            }
+            "projectReferences": {}
           }
         },
         "warningProperties": {

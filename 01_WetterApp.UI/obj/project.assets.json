@@ -263,6 +263,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
+          "03_WetterApp.Models": "1.0.0",
           "IpGeoLocation.IpGeoLocation": "1.0.5",
           "Microsoft.Extensions.Configuration.UserSecrets": "6.0.1"
         },
@@ -276,9 +277,6 @@
       "03_WetterApp.Models/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
-        "dependencies": {
-          "02_WetterApp.Data": "1.0.0"
-        },
         "compile": {
           "bin/placeholder/03_WetterApp.Models.dll": {}
         },
@@ -643,7 +641,7 @@
   },
   "projectFileDependencyGroups": {
     "net7.0-windows7.0": [
-      "03_WetterApp.Models >= 1.0.0"
+      "02_WetterApp.Data >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -679,8 +677,8 @@
         "net7.0-windows7.0": {
           "targetAlias": "net7.0-windows",
           "projectReferences": {
-            "E:\\VisualStudio\\repos\\WetterApp\\03_WetterApp.Models\\03_WetterApp.Models.csproj": {
-              "projectPath": "E:\\VisualStudio\\repos\\WetterApp\\03_WetterApp.Models\\03_WetterApp.Models.csproj"
+            "E:\\VisualStudio\\repos\\WetterApp\\02_WetterApp.Data\\02_WetterApp.Data.csproj": {
+              "projectPath": "E:\\VisualStudio\\repos\\WetterApp\\02_WetterApp.Data\\02_WetterApp.Data.csproj"
             }
           }
         }
