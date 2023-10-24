@@ -1,11 +1,48 @@
 {
   "version": 3,
   "targets": {
-    "net7.0-windows7.0": {}
+    "net7.0-windows7.0": {
+      "02_WetterApp.Data/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "03_WetterApp.Models": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/02_WetterApp.Data.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/02_WetterApp.Data.dll": {}
+        }
+      },
+      "03_WetterApp.Models/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/03_WetterApp.Models.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/03_WetterApp.Models.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "02_WetterApp.Data/1.0.0": {
+      "type": "project",
+      "path": "../02_WetterApp.Data/02_WetterApp.Data.csproj",
+      "msbuildProject": "../02_WetterApp.Data/02_WetterApp.Data.csproj"
+    },
+    "03_WetterApp.Models/1.0.0": {
+      "type": "project",
+      "path": "../03_WetterApp.Models/03_WetterApp.Models.csproj",
+      "msbuildProject": "../03_WetterApp.Models/03_WetterApp.Models.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net7.0-windows7.0": []
+    "net7.0-windows7.0": [
+      "02_WetterApp.Data >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\felix\\.nuget\\packages\\": {},
@@ -39,7 +76,11 @@
       "frameworks": {
         "net7.0-windows7.0": {
           "targetAlias": "net7.0-windows",
-          "projectReferences": {}
+          "projectReferences": {
+            "E:\\VisualStudio\\repos\\WeatherApp\\02_WetterApp.Data\\02_WetterApp.Data.csproj": {
+              "projectPath": "E:\\VisualStudio\\repos\\WeatherApp\\02_WetterApp.Data\\02_WetterApp.Data.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
