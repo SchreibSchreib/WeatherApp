@@ -1,30 +1,11 @@
 {
   "version": 3,
   "targets": {
-    "net7.0-windows7.0": {
-      "03_WetterApp.Models/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v7.0",
-        "compile": {
-          "bin/placeholder/03_WetterApp.Models.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/03_WetterApp.Models.dll": {}
-        }
-      }
-    }
+    "net7.0-windows7.0": {}
   },
-  "libraries": {
-    "03_WetterApp.Models/1.0.0": {
-      "type": "project",
-      "path": "../03_WetterApp.Models/03_WetterApp.Models.csproj",
-      "msbuildProject": "../03_WetterApp.Models/03_WetterApp.Models.csproj"
-    }
-  },
+  "libraries": {},
   "projectFileDependencyGroups": {
-    "net7.0-windows7.0": [
-      "03_WetterApp.Models >= 1.0.0"
-    ]
+    "net7.0-windows7.0": []
   },
   "packageFolders": {
     "C:\\Users\\felix\\.nuget\\packages\\": {},
@@ -58,11 +39,7 @@
       "frameworks": {
         "net7.0-windows7.0": {
           "targetAlias": "net7.0-windows",
-          "projectReferences": {
-            "E:\\VisualStudio\\repos\\WeatherApp\\03_WetterApp.Models\\03_WetterApp.Models.csproj": {
-              "projectPath": "E:\\VisualStudio\\repos\\WeatherApp\\03_WetterApp.Models\\03_WetterApp.Models.csproj"
-            }
-          }
+          "projectReferences": {}
         }
       },
       "warningProperties": {
