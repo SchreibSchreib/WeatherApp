@@ -1,5 +1,6 @@
 ﻿using _03_WetterApp.Models;
 using System;
+using System.Diagnostics;
 using System.Windows;
 
 namespace _01_WetterApp.UI
@@ -16,7 +17,10 @@ namespace _01_WetterApp.UI
 
         private void Location_Initialized(object sender, EventArgs e)
         {
-            User currenntUser = new User();
+            UserIp userIp = new UserIp();
+
+            Debug.WriteLine(userIp.IpV4Adress);
+            Debug.WriteLine(userIp.IpV6Adress);
         }
     }
 }

@@ -77,17 +77,6 @@ E:\VisualStudio\repos\WeatherApp\01_WetterApp.UI\bin\Debug\net7.0-windows\01_Wet
 E:\VisualStudio\repos\WeatherApp\01_WetterApp.UI\bin\Debug\net7.0-windows\01_WetterApp.UI.runtimeconfig.json
 E:\VisualStudio\repos\WeatherApp\01_WetterApp.UI\bin\Debug\net7.0-windows\01_WetterApp.UI.dll
 E:\VisualStudio\repos\WeatherApp\01_WetterApp.UI\bin\Debug\net7.0-windows\01_WetterApp.UI.pdb
-E:\VisualStudio\repos\WeatherApp\01_WetterApp.UI\bin\Debug\net7.0-windows\IPGeolocation.dll
-E:\VisualStudio\repos\WeatherApp\01_WetterApp.UI\bin\Debug\net7.0-windows\Microsoft.Extensions.Configuration.dll
-E:\VisualStudio\repos\WeatherApp\01_WetterApp.UI\bin\Debug\net7.0-windows\Microsoft.Extensions.Configuration.Abstractions.dll
-E:\VisualStudio\repos\WeatherApp\01_WetterApp.UI\bin\Debug\net7.0-windows\Microsoft.Extensions.Configuration.FileExtensions.dll
-E:\VisualStudio\repos\WeatherApp\01_WetterApp.UI\bin\Debug\net7.0-windows\Microsoft.Extensions.Configuration.Json.dll
-E:\VisualStudio\repos\WeatherApp\01_WetterApp.UI\bin\Debug\net7.0-windows\Microsoft.Extensions.Configuration.UserSecrets.dll
-E:\VisualStudio\repos\WeatherApp\01_WetterApp.UI\bin\Debug\net7.0-windows\Microsoft.Extensions.FileProviders.Abstractions.dll
-E:\VisualStudio\repos\WeatherApp\01_WetterApp.UI\bin\Debug\net7.0-windows\Microsoft.Extensions.FileProviders.Physical.dll
-E:\VisualStudio\repos\WeatherApp\01_WetterApp.UI\bin\Debug\net7.0-windows\Microsoft.Extensions.FileSystemGlobbing.dll
-E:\VisualStudio\repos\WeatherApp\01_WetterApp.UI\bin\Debug\net7.0-windows\Microsoft.Extensions.Primitives.dll
-E:\VisualStudio\repos\WeatherApp\01_WetterApp.UI\bin\Debug\net7.0-windows\Newtonsoft.Json.dll
 E:\VisualStudio\repos\WeatherApp\01_WetterApp.UI\bin\Debug\net7.0-windows\02_WetterApp.Data.dll
 E:\VisualStudio\repos\WeatherApp\01_WetterApp.UI\bin\Debug\net7.0-windows\03_WetterApp.Models.dll
 E:\VisualStudio\repos\WeatherApp\01_WetterApp.UI\bin\Debug\net7.0-windows\03_WetterApp.Models.pdb
