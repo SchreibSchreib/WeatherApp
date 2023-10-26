@@ -2,20 +2,36 @@
 
 namespace _03_WetterApp.Models
 {
-    public class Location : ILocateable
+    public class Location
     {
-        public City UserCity { get; set; }
-        public string UserCountry { get; set; }
-        public string UserRegion { get; set; }
+        public Country UserCountry { get; }
+        public Region UserRegion { get; }
+        public City UserCity { get; }
+        private ILocateable _locateable;
 
         public Location()
         {
-            
+            _locateable = new Locator(new UserIp());
+            UserCountry = GetCountry();
+            UserRegion = GetRegion();
+            UserCountry = GetCountry();
         }
 
-        public string GetLocation(UserIp ipAdress)
+        private Country? GetCountry()
+        {
+            _locateable.Locate();
+        }
+
+        private Region? GetRegion()
         {
             throw new NotImplementedException();
         }
+
+        private City GetCity()
+        {
+            throw new NotImplementedException();
+        }
+
+
     }
 }

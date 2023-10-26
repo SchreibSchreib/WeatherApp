@@ -16,35 +16,36 @@ namespace _03_WetterApp.Models
 
         public UserIp()
         {
-            IpV4Adress = GetIpV4();
-            IpV6Adress = GetIpV6();
+            IpV4Adress = GetPublicIpV4();
+            IpV6Adress = GetPublicIpV6();
         }
 
 
-        private string GetIpV4()
+        private string GetPublicIpV4()
         {
-            IPAddress[] addresses = Dns.GetHostAddresses(Dns.GetHostName());
-            foreach (IPAddress address in addresses)
-            {
-                if (address.AddressFamily == AddressFamily.InterNetwork) // IPv4
-                {
-                    return address.ToString();
-                }
-            }
-            return "IPv4-Adresse nicht gefunden.";
+            string url = "https://api.ipify.org";
+            return GetIPAddressFromURL(url);
         }
 
-        private string GetIpV6()
+        private string GetPublicIpV6()
         {
-            IPAddress[] addresses = Dns.GetHostAddresses(Dns.GetHostName());
-            foreach (IPAddress address in addresses)
+            string url = "https://api64.ipify.org";
+            return GetIPAddressFromURL(url);
+        }
+
+        private string GetIPAddressFromURL(string url)
+        {
+            try
             {
-                if (address.AddressFamily == AddressFamily.InterNetworkV6) // IPv6
+                using (WebClient client = new WebClient())
                 {
-                    return address.ToString();
+                    return client.DownloadString(url);
                 }
             }
-            return "IPv6-Adresse nicht gefunden.";
+            catch (Exception e)
+            {
+                return "Fehler beim Abrufen der IP-Adresse: " + e.Message;
+            }
         }
     }
 }

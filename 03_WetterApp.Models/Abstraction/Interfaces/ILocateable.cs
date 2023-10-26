@@ -1,7 +1,13 @@
-﻿namespace _03_WetterApp.Models.Abstraction.Interfaces
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace _03_WetterApp.Models.Abstraction.Interfaces
 {
-    interface ILocateable
+    internal interface ILocateable<T>
     {
-        string GetLocation(UserIp ipAdress);
+        T Locate(object currentObject);
     }
 }
