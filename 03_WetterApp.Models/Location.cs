@@ -19,7 +19,7 @@ namespace _03_WetterApp.Models
 
         private Country? GetCountry()
         {
-            _locateable.Locate();
+            throw new NotImplementedException();
         }
 
         private Region? GetRegion()

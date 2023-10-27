@@ -1,4 +1,6 @@
 ﻿using _03_WetterApp.Models;
+using IPinfo;
+using IPinfo.Models;
 using System;
 using System.Diagnostics;
 using System.Windows;
@@ -15,7 +17,7 @@ namespace _01_WetterApp.UI
             InitializeComponent();
         }
 
-        private void Location_Initialized(object sender, EventArgs e)
+        private async void Location_Initialized(object sender, EventArgs e)
         {
             UserIp userIp = new UserIp();
 

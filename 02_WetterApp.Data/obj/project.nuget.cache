@@ -1,8 +1,21 @@
 {
   "version": 2,
-  "dgSpecHash": "jWQ3fsjNYxPmTUnCjSTda0wFicuSpGzRkqJNUaFU03nHOC/GvizWfDHn3p23zhDVrKSBJAbP2hKE6ljuAV0bdA==",
+  "dgSpecHash": "l4CNAdEcbo4UL8qirJK+/QofK9MVXtWbF95LEu8GtLlYj1poF+e8HO9a1whaTRBXtP77HsB0fXG0BS7QBJn/dw==",
   "success": true,
   "projectFilePath": "E:\\VisualStudio\\repos\\WeatherApp\\02_WetterApp.Data\\02_WetterApp.Data.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\felix\\.nuget\\packages\\ipinfo\\2.1.0\\ipinfo.2.1.0.nupkg.sha512",
+    "C:\\Users\\felix\\.nuget\\packages\\microsoft.win32.systemevents\\6.0.0\\microsoft.win32.systemevents.6.0.0.nupkg.sha512",
+    "C:\\Users\\felix\\.nuget\\packages\\system.configuration.configurationmanager\\6.0.0\\system.configuration.configurationmanager.6.0.0.nupkg.sha512",
+    "C:\\Users\\felix\\.nuget\\packages\\system.drawing.common\\6.0.0\\system.drawing.common.6.0.0.nupkg.sha512",
+    "C:\\Users\\felix\\.nuget\\packages\\system.runtime.caching\\6.0.0\\system.runtime.caching.6.0.0.nupkg.sha512",
+    "C:\\Users\\felix\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
+    "C:\\Users\\felix\\.nuget\\packages\\system.security.accesscontrol\\6.0.0\\system.security.accesscontrol.6.0.0.nupkg.sha512",
+    "C:\\Users\\felix\\.nuget\\packages\\system.security.cryptography.protecteddata\\6.0.0\\system.security.cryptography.protecteddata.6.0.0.nupkg.sha512",
+    "C:\\Users\\felix\\.nuget\\packages\\system.security.permissions\\6.0.0\\system.security.permissions.6.0.0.nupkg.sha512",
+    "C:\\Users\\felix\\.nuget\\packages\\system.text.encodings.web\\6.0.0\\system.text.encodings.web.6.0.0.nupkg.sha512",
+    "C:\\Users\\felix\\.nuget\\packages\\system.text.json\\6.0.2\\system.text.json.6.0.2.nupkg.sha512",
+    "C:\\Users\\felix\\.nuget\\packages\\system.windows.extensions\\6.0.0\\system.windows.extensions.6.0.0.nupkg.sha512"
+  ],
   "logs": []
 }

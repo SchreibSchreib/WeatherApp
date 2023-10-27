@@ -1,14 +1,19 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net7.0</TargetFramework>
     <RootNamespace>_03_WetterApp.Models</RootNamespace>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <UserSecretsId>42d39c94-d6c2-40d4-9d8f-d883990e3124</UserSecretsId>
   </PropertyGroup>
 
   <ItemGroup>
     <Folder Include="Abstraction\AbstractClasses\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="IPinfo" Version="2.1.0" />
   </ItemGroup>
 
 </Project>

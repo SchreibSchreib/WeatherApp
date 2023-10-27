@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace _03_WetterApp.Models.Abstraction.Interfaces
 {
-    internal interface ILocateable<T>
+    internal interface ILocateable
     {
-        T Locate(object currentObject);
+        void Locate();
     }
 }

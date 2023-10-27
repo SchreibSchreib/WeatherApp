@@ -2,7 +2,7 @@
 
 namespace _03_WetterApp.Models
 {
-    internal class Locator : ILocateable<object>
+    internal class Locator : ILocateable
     {
         private string _ipV4;
         private string _ipV6;
@@ -13,7 +13,7 @@ namespace _03_WetterApp.Models
             _ipV6 = currentUserIp.IpV6Adress;
         }
 
-        public object Locate(object currentObject)
+        public void Locate()
         {
             throw new NotImplementedException();
         }
