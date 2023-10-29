@@ -8,6 +8,8 @@ namespace _03_WetterApp.Models.Abstraction.Interfaces
 {
     internal interface ILocateable
     {
-        void Locate();
+        Country LocateCountry();
+        Region LocateRegion();
+        City LocateCity();
     }
 }

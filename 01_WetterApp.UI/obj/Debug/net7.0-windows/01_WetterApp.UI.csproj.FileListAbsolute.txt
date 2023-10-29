@@ -138,3 +138,12 @@ E:\VisualStudio\repos\WetterApp\01_WetterApp.UI\obj\Debug\net7.0-windows\ref\01_
 E:\VisualStudio\repos\WeatherApp\01_WetterApp.UI\bin\Debug\net7.0-windows\IPinfo.dll
 E:\VisualStudio\repos\WeatherApp\01_WetterApp.UI\bin\Debug\net7.0-windows\System.Runtime.Caching.dll
 E:\VisualStudio\repos\WeatherApp\01_WetterApp.UI\bin\Debug\net7.0-windows\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+E:\VisualStudio\repos\WeatherApp\01_WetterApp.UI\bin\Debug\net7.0-windows\Microsoft.Extensions.Configuration.dll
+E:\VisualStudio\repos\WeatherApp\01_WetterApp.UI\bin\Debug\net7.0-windows\Microsoft.Extensions.Configuration.Abstractions.dll
+E:\VisualStudio\repos\WeatherApp\01_WetterApp.UI\bin\Debug\net7.0-windows\Microsoft.Extensions.Configuration.FileExtensions.dll
+E:\VisualStudio\repos\WeatherApp\01_WetterApp.UI\bin\Debug\net7.0-windows\Microsoft.Extensions.Configuration.Json.dll
+E:\VisualStudio\repos\WeatherApp\01_WetterApp.UI\bin\Debug\net7.0-windows\Microsoft.Extensions.Configuration.UserSecrets.dll
+E:\VisualStudio\repos\WeatherApp\01_WetterApp.UI\bin\Debug\net7.0-windows\Microsoft.Extensions.FileProviders.Abstractions.dll
+E:\VisualStudio\repos\WeatherApp\01_WetterApp.UI\bin\Debug\net7.0-windows\Microsoft.Extensions.FileProviders.Physical.dll
+E:\VisualStudio\repos\WeatherApp\01_WetterApp.UI\bin\Debug\net7.0-windows\Microsoft.Extensions.FileSystemGlobbing.dll
+E:\VisualStudio\repos\WeatherApp\01_WetterApp.UI\bin\Debug\net7.0-windows\Microsoft.Extensions.Primitives.dll

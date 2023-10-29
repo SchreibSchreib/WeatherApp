@@ -14,7 +14,7 @@ namespace _03_WetterApp.Models
             _locateable = new Locator(new UserIp());
             UserCountry = GetCountry();
             UserRegion = GetRegion();
-            UserCountry = GetCountry();
+            UserCity = GetCity();
         }
 
         private Country? GetCountry()
