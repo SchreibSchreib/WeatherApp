@@ -32,14 +32,14 @@ namespace _03_WetterApp.Models
                 .Build();
         }
 
-        private string GetToken()
-        {
-            IConfiguration configuration = new ConfigurationBuilder()
-            .AddUserSecrets<string>()
-            .Build();
+        //private string GetToken()
+        //{
+        //    IConfiguration configuration = new ConfigurationBuilder()
+        //    .AddUserSecrets<string>()
+        //    .Build();
 
-            return configuration["ApiKeyIpInfo"];
-        }
+        //    return configuration["ApiKeyIpInfo"];
+        //}
 
         public Country LocateCountry() => new Country(_ipResponse.Country);
    
