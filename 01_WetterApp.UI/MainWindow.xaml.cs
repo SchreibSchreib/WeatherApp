@@ -19,12 +19,9 @@ namespace _01_WetterApp.UI
 
         private async void Location_Initialized(object sender, EventArgs e)
         {
-            UserIp userIp = new UserIp();
+            Locator testLocator = new Locator(new UserIp());
 
-            Debug.WriteLine(userIp.IpV4Adress);
-            Debug.WriteLine(userIp.IpV6Adress);
-
-            User testUser = new User(userIp);
+            User testUser = new User(testLocator);
 
         }
     }

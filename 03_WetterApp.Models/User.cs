@@ -10,12 +10,9 @@ namespace _03_WetterApp.Models
     public class User
     {
         public LocationData CurrentLocation { get; set; }
-        public WeatherInformation CurrentWeather { get; set; }
-        public WeatherForeCast WeatherForeCast { get; set; }
 
-        public User(UserIp currentIp)
+        public User(Locator locator)
         {
-            Locator locator = new Locator(currentIp);
             CurrentLocation = new LocationData(locator);
         }
     }
