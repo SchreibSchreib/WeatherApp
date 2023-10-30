@@ -9,8 +9,14 @@ namespace _03_WetterApp.Models
 {
     public class User
     {
-        public int Id { get; set; }
         public Location CurrentLocation { get; set; }
         public WeatherInformation CurrentWeather { get; set; }
+        public WeatherForeCast WeatherForeCast { get; set; }
+
+        public User(UserIp currentIp)
+        {
+            Locator locator = new Locator(currentIp);
+            CurrentLocation = new Location(locator);
+        }
     }
 }

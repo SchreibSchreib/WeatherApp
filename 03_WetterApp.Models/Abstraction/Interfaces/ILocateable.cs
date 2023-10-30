@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace _03_WetterApp.Models.Abstraction.Interfaces
 {
-    internal interface ILocateable
+    public interface ILocateable
     {
         Country LocateCountry();
         Region LocateRegion();
-        City LocateCity();
+        City LocateCityAsync();
     }
 }

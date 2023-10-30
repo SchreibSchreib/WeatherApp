@@ -9,29 +9,27 @@ namespace _03_WetterApp.Models
         public City UserCity { get; }
         private ILocateable _locateable;
 
-        public Location()
+        public Location(ILocateable locateable)
         {
-            _locateable = new Locator(new UserIp());
+            _locateable = locateable;
             UserCountry = GetCountry();
             UserRegion = GetRegion();
             UserCity = GetCity();
         }
 
-        private Country? GetCountry()
+        private Country GetCountry()
         {
-            throw new NotImplementedException();
+            return _locateable.LocateCountry();
         }
 
-        private Region? GetRegion()
+        private Region GetRegion()
         {
-            throw new NotImplementedException();
+           return _locateable.LocateRegion();
         }
 
         private City GetCity()
         {
-            throw new NotImplementedException();
+            return _locateable.LocateCityAsync();
         }
-
-
     }
 }

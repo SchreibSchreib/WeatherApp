@@ -24,7 +24,8 @@ namespace _01_WetterApp.UI
             Debug.WriteLine(userIp.IpV4Adress);
             Debug.WriteLine(userIp.IpV6Adress);
 
-            Locator locator = new Locator(userIp);
+            User testUser = new User(userIp);
+
         }
     }
 }

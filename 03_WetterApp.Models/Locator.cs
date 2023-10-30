@@ -15,13 +15,13 @@ namespace _03_WetterApp.Models
         {
             _ipV4 = currentUserIp.IpV4Adress;
             _ipV6 = currentUserIp.IpV6Adress;
-            _ipResponse = GetIpInformation().Result;
+            _ipResponse = GetIpInformation();
         }
 
-        private async Task<IPResponse> GetIpInformation()
+        private IPResponse GetIpInformation()
         {
             IPinfoClient client = GetClient();
-            IPResponse ipResponse = await client.IPApi.GetDetailsAsync(_ipV4);
+            IPResponse ipResponse = client.IPApi.GetDetails(_ipV4);
             return ipResponse;
         }
 
@@ -41,19 +41,15 @@ namespace _03_WetterApp.Models
             return configuration["ApiKeyIpInfo"];
         }
 
-        public Country LocateCountry()
-        {
-            throw new NotImplementedException();
-        }
+        public Country LocateCountry() => new Country(_ipResponse.Country);
+   
 
-        public City LocateCity()
-        {
-            throw new NotImplementedException();
-        }
+        public Region LocateRegion() => new Region(_ipResponse.Region);
+        
 
-        public Region LocateRegion()
-        {
-            throw new NotImplementedException();
-        }
+        public City LocateCityAsync() => new City(_ipResponse.City);
+        
+
+        public bool IsLocated() => _ipResponse == null;
     }
 }

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Net;
 using System.Net.Sockets;
@@ -44,7 +45,8 @@ namespace _03_WetterApp.Models
             }
             catch (Exception e)
             {
-                return "Fehler beim Abrufen der IP-Adresse: " + e.Message;
+                Debug.WriteLine("Fehler beim Abrufen der IP-Adresse: " + e.Message);
+                return "94.134.79.147"; //Berlin IP Adress
             }
         }
     }
