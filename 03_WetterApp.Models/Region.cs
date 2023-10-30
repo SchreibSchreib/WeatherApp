@@ -1,12 +1,12 @@
-﻿namespace _03_WetterApp.Models
-{
-    public class Region
-    {
-        public string Name { get; }
+﻿using _03_WetterApp.Models.Abstraction.AbstractClasses;
 
-        public Region(string name)
+namespace _03_WetterApp.Models
+{
+    public class Region : Location
+    {
+        public Region(string name) : base(name)
         {
-            Name = name;
+
         }
     }
 }

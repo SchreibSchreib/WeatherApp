@@ -2,14 +2,14 @@
 
 namespace _03_WetterApp.Models
 {
-    public class Location
+    public class LocationData
     {
         public Country UserCountry { get; }
         public Region UserRegion { get; }
         public City UserCity { get; }
         private ILocateable _locateable;
 
-        public Location(ILocateable locateable)
+        public LocationData(ILocateable locateable)
         {
             _locateable = locateable;
             UserCountry = GetCountry();
