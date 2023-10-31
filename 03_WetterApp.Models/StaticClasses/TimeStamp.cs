@@ -10,7 +10,9 @@ namespace _03_WetterApp.Models.StaticClasses
     {
         private static DateTime _currentTimeStamp;
 
-        public static string GetTimeStamp() => string.Join(':', _currentTimeStamp.Hour, _currentTimeStamp.Minute);
+        public static string GetTimeStamp() => string.Join(':',
+            _currentTimeStamp.Hour,
+            _currentTimeStamp.Minute);
         
 
         public static void SetTimeStamp()

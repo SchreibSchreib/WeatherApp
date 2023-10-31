@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace _02_WetterApp.Data.Handling
 {
-    internal class Save : IWriteable
+    public class Save : IWriteable
     {
         private User _currentUser;
 

@@ -5,13 +5,14 @@ using _03_WetterApp.Models.Weather;
 
 namespace _02_WetterApp.Data.Handling
 {
-    internal class Load : IReadeable
+    public class Load : IReadeable
     {
         private User _currentUser;
 
         public Load(User currentUser)
         {
             _currentUser = currentUser;
+            
         }
 
         public CurrentWeather CurrentFromJson(string filePath)

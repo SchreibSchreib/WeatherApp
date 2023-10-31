@@ -4,17 +4,23 @@ using _03_WetterApp.Models.Weather;
 
 namespace _02_WetterApp.Data
 {
-    internal class WeatherDataProcessor
+    internal class WeatherDataProcessor : IProcesseable
     {
+        public CurrentWeather CurrentWeather { get; }
+        public Forecast Forecast { get; }
         private FileInformation _fileInformation;
         private string _jsonContent;
         private IReadeable _readeable;
         private IWriteable _writeable;
 
-        public WeatherDataProcessor(FileInformation fileInformation, string jsonContent)
+        public WeatherDataProcessor(FileInformation fileInformation, IReadeable readeable, IWriteable writeable, string jsonContent)
         {
             _fileInformation = fileInformation;
+            _readeable = readeable;
+            _writeable = writeable;
             _jsonContent = jsonContent;
+            CurrentWeather = GetCurrentWeather();
+            Forecast = GetForecast();   
         }
 
         public CurrentWeather GetCurrentWeather() => _readeable.CurrentFromJson(_fileInformation.ForCurrent);
