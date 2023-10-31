@@ -1,4 +1,5 @@
 ﻿using _03_WetterApp.Models;
+using _03_WetterApp.Models.StaticClasses;
 using IPinfo;
 using IPinfo.Models;
 using System;
@@ -22,7 +23,8 @@ namespace _01_WetterApp.UI
             Locator testLocator = new Locator(new UserIp());
 
             User testUser = new User(testLocator);
-
+            TimeStamp.SetTimeStamp();
+            string testTime = TimeStamp.GetTimeStamp();
         }
     }
 }

@@ -1,39 +1,34 @@
-﻿using _02_WetterApp.Data.Abstraction.Interfaces;
-using _03_WetterApp.Models;
+﻿using _02_WetterApp.Data.Handling;
+using _03_WetterApp.Models.Abstraction.Interfaces;
 using _03_WetterApp.Models.Weather;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace _02_WetterApp.Data
 {
     internal class WeatherDataProcessor
     {
-        private string _filePath;
+        private FileInformation _fileInformation;
         private string _jsonContent;
         private IReadeable _readeable;
         private IWriteable _writeable;
 
-        public WeatherDataProcessor(string filePath, string jsonContent)
+        public WeatherDataProcessor(FileInformation fileInformation, string jsonContent)
         {
-            _filePath = filePath;
+            _fileInformation = fileInformation;
             _jsonContent = jsonContent;
         }
 
-        public CurrentWeather GetCurrentWeather() => _readeable.CurrentFromJson(_filePath);
+        public CurrentWeather GetCurrentWeather() => _readeable.CurrentFromJson(_fileInformation.ForCurrent);
 
-        public Forecast GetForecast() => _readeable.ForecastFromJson(_filePath);
+        public Forecast GetForecast() => _readeable.ForecastFromJson(_fileInformation.ForForecast);
 
         public void SafeCurrentWeather()
         {
-            _writeable.WriteCurrentToJson(_filePath, _jsonContent);
+            _writeable.WriteCurrentToJson(_fileInformation.ForCurrent, _jsonContent);
         }
 
         public void SafeForecast()
         {
-            _writeable.WriteForecastToJson(_filePath, _jsonContent);
+            _writeable.WriteForecastToJson(_fileInformation.ForForecast, _jsonContent);
         }
     }
 }

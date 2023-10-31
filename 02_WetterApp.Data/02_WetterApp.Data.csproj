@@ -11,8 +11,4 @@
     <ProjectReference Include="..\03_WetterApp.Models\03_WetterApp.Models.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Abstraction\AbstractClasses\" />
-  </ItemGroup>
-
 </Project>
