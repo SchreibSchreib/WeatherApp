@@ -10,11 +10,13 @@ namespace _03_WetterApp.Models
         private string _ipV4;
         private string _ipV6;
         private IPResponse _ipResponse;
+        private string? _apiKey;
 
-        public Locator(UserIp currentUserIp)
+        public Locator(UserIp currentUserIp, IConfiguration config)
         {
             _ipV4 = currentUserIp.IpV4Adress;
             _ipV6 = currentUserIp.IpV6Adress;
+            _apiKey = config["ApiKeyIpInfo"];
             _ipResponse = GetIpInformation();
         }
 
@@ -28,18 +30,9 @@ namespace _03_WetterApp.Models
         private IPinfoClient GetClient()
         {
             return new IPinfoClient.Builder()
-                .AccessToken("c0a7f5306473a6")
+                .AccessToken(_apiKey)
                 .Build();
         }
-
-        //private string GetToken()
-        //{
-        //    IConfiguration configuration = new ConfigurationBuilder()
-        //    .AddUserSecrets<string>()
-        //    .Build();
-
-        //    return configuration["ApiKeyIpInfo"];
-        //}
 
         public Country LocateCountry() => new Country(_ipResponse.Country);
    

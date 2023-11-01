@@ -9,13 +9,11 @@ namespace _03_WetterApp.Models
         public Region UserRegion { get; }
         public City UserCity { get; }
         private ILocateable _locateable;
-        private string? _apiKey;
 
-        public LocationData(ILocateable locateable, IConfiguration config)
+        public LocationData(ILocateable locateable)
         {
 
             _locateable = locateable;
-            _apiKey = config["ApiKeyIpInfo"];
             UserCountry = GetCountry();
             UserRegion = GetRegion();
             UserCity = GetCity();

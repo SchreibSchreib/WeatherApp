@@ -12,9 +12,9 @@ namespace _03_WetterApp.Models
     {
         public LocationData CurrentLocation { get; set; }
 
-        public User(Locator locator, IConfiguration config)
+        public User(Locator locator)
         {
-            CurrentLocation = new LocationData(locator, config);
+            CurrentLocation = new LocationData(locator);
         }
     }
 }

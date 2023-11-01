@@ -1,10 +1,6 @@
-﻿using _02_WetterApp.Data.Handling;
-using _03_WetterApp.Models;
-using _03_WetterApp.Models.StaticClasses;
-using IPinfo;
-using IPinfo.Models;
+﻿using _03_WetterApp.Models;
+using Microsoft.Extensions.Configuration;
 using System;
-using System.Diagnostics;
 using System.Windows;
 
 namespace _01_WetterApp.UI
@@ -21,11 +17,16 @@ namespace _01_WetterApp.UI
 
         private void Location_Initialized(object sender, EventArgs e)
         {
-            Locator testLocator = new Locator(new UserIp());
+            IConfiguration? testConfig = new Configuration().Config;
+
+            if (testConfig is null)
+            {
+                MessageBox.Show("Couldnt load Configuration file.");
+                throw new NullReferenceException();
+            }
+
+            Locator testLocator = new Locator(new UserIp(), testConfig);
             User testUser = new User(testLocator);
-            FileInformation fileInformation = new FileInformation();
-            Load testLoad = new Load(testUser);
-            Save testSave = new Save(testUser);
         }
     }
 }
