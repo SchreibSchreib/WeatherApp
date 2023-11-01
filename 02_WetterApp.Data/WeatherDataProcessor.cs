@@ -9,23 +9,45 @@ namespace _02_WetterApp.Data
         public CurrentWeather CurrentWeather { get; }
         public Forecast Forecast { get; }
         private FileInformation _fileInformation;
+        private ApiInformation _apiInformation;
         private string _jsonContent;
         private IReadeable _readeable;
         private IWriteable _writeable;
 
-        public WeatherDataProcessor(FileInformation fileInformation, IReadeable readeable, IWriteable writeable, string jsonContent)
+        public WeatherDataProcessor(FileInformation fileInformation,
+            ApiInformation apiInformation,
+            IReadeable readeable,
+            IWriteable writeable,
+            string jsonContent)
         {
             _fileInformation = fileInformation;
+            _apiInformation = apiInformation;
             _readeable = readeable;
             _writeable = writeable;
             _jsonContent = jsonContent;
             CurrentWeather = GetCurrentWeather();
-            Forecast = GetForecast();   
+            Forecast = GetForecast();
         }
 
-        public CurrentWeather GetCurrentWeather() => _readeable.CurrentFromJson(_fileInformation.ForCurrent);
+        public CurrentWeather GetCurrentWeather()
+        {
+            if (true)
+            {
+                return _readeable.CurrentFromHttp(_apiInformation.UrlCurrent);
+            }
 
-        public Forecast GetForecast() => _readeable.ForecastFromJson(_fileInformation.ForForecast);
+            //return _readeable.CurrentFromJson(_fileInformation.ForCurrent);   <--For upcoming timestamp Logic
+        }
+
+        public Forecast GetForecast()
+        {
+            if (true)
+            {
+                return _readeable.ForecastFromHttp(_apiInformation.UrlForecast);
+            }
+
+            //return _readeable.ForecastFromJson(_fileInformation.ForForecast);   <--For upcoming timestamp Logic
+        }
 
         public void SafeCurrentWeather()
         {

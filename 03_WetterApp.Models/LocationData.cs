@@ -1,4 +1,5 @@
 ﻿using _03_WetterApp.Models.Abstraction.Interfaces;
+using Microsoft.Extensions.Configuration;
 
 namespace _03_WetterApp.Models
 {
@@ -8,10 +9,13 @@ namespace _03_WetterApp.Models
         public Region UserRegion { get; }
         public City UserCity { get; }
         private ILocateable _locateable;
+        private string? _apiKey;
 
-        public LocationData(ILocateable locateable)
+        public LocationData(ILocateable locateable, IConfiguration config)
         {
+
             _locateable = locateable;
+            _apiKey = config["ApiKeyIpInfo"];
             UserCountry = GetCountry();
             UserRegion = GetRegion();
             UserCity = GetCity();
@@ -29,7 +33,7 @@ namespace _03_WetterApp.Models
 
         private City GetCity()
         {
-            return _locateable.LocateCityAsync();
+            return _locateable.LocateCity();
         }
     }
 }

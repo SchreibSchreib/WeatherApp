@@ -10,6 +10,6 @@ namespace _03_WetterApp.Models.Abstraction.Interfaces
     {
         Country LocateCountry();
         Region LocateRegion();
-        City LocateCityAsync();
+        City LocateCity();
     }
 }

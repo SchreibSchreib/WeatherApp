@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.Extensions.Configuration;
+using System;
 using System.Collections.Generic;
 using System.Data.Common;
 using System.Linq;
@@ -11,9 +12,9 @@ namespace _03_WetterApp.Models
     {
         public LocationData CurrentLocation { get; set; }
 
-        public User(Locator locator)
+        public User(Locator locator, IConfiguration config)
         {
-            CurrentLocation = new LocationData(locator);
+            CurrentLocation = new LocationData(locator, config);
         }
     }
 }

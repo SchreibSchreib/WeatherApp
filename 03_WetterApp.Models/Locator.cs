@@ -47,7 +47,7 @@ namespace _03_WetterApp.Models
         public Region LocateRegion() => new Region(_ipResponse.Region);
         
 
-        public City LocateCityAsync() => new City(_ipResponse.City);
+        public City LocateCity() => new City(_ipResponse.City);
         
 
         public bool IsLocated() => _ipResponse == null;
