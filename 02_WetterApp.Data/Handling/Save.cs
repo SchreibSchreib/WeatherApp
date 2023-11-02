@@ -10,13 +10,6 @@ namespace _02_WetterApp.Data.Handling
 {
     public class Save : IWriteable
     {
-        private User _currentUser;
-
-        public Save(User currentUser)
-        {
-            _currentUser = currentUser;
-        }
-
         public void WriteCurrentToJson(string jsonContent, string filePath)
         {
             throw new NotImplementedException();

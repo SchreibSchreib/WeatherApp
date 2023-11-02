@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace _02_WetterApp.Data.Handling
 {
-    internal class ApiInformation
+    public class ApiInformation
     {
         public string UrlCurrent { get; }
         public string UrlForecast { get; }
@@ -26,12 +26,18 @@ namespace _02_WetterApp.Data.Handling
 
         private string GetForecastUrl()
         {
-            return $"http://api.weatherapi.com/v1/current.json?key={_apiKey}&q={_currentUser.CurrentLocation.UserCity}&aqi=no";
+            return $"http://api.weatherapi.com/v1/current.json?key={_apiKey}&" +
+                $"q={_currentUser.CurrentLocation.UserCity.Name}&" +
+                $"aqi=no";
         }
 
         private string GetCurrentUrl()
         {
-            return $"http://api.weatherapi.com/v1/forecast.json?key={_apiKey}&q={_currentUser.CurrentLocation.UserCity}&days=3&aqi=no&alerts=no";
+            return $"http://api.weatherapi.com/v1/forecast.json?key={_apiKey}&" +
+                $"q={_currentUser.CurrentLocation.UserCity.Name}&" +
+                $"days=3&" +
+                $"aqi=no&" +
+                $"alerts=no";
         }
     }
 }

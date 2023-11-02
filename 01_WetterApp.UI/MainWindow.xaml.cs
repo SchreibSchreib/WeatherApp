@@ -1,4 +1,6 @@
-﻿using _03_WetterApp.Models;
+﻿using _02_WetterApp.Data;
+using _02_WetterApp.Data.Handling;
+using _03_WetterApp.Models;
 using Microsoft.Extensions.Configuration;
 using System;
 using System.Windows;
@@ -24,9 +26,13 @@ namespace _01_WetterApp.UI
                 MessageBox.Show("Couldnt load Configuration file.");
                 throw new NullReferenceException();
             }
+            User testUser = new User(new Locator(new UserIp(), testConfig));
+            FileInformation testInfo = new FileInformation();
+            ApiInformation apiInformation = new ApiInformation(testUser, testConfig);
+            Load load = new Load();
+            Save save = new Save();
 
-            Locator testLocator = new Locator(new UserIp(), testConfig);
-            User testUser = new User(testLocator);
+            WeatherDataProcessor weatherDataProcessor = new WeatherDataProcessor(testInfo, apiInformation,load,save);
         }
     }
 }

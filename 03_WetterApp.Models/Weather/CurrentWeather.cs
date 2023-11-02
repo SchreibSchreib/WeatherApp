@@ -14,7 +14,7 @@ namespace _03_WetterApp.Models.Weather
         public int LastUpdatedEpoch { get; set; }
 
         [JsonPropertyName("last_updated")]
-        public string LastUpdated { get; set; }
+        public string? LastUpdated { get; set; }
 
         [JsonPropertyName("temp_c")]
         public decimal TemperatureCelsius { get; set; }
@@ -26,7 +26,7 @@ namespace _03_WetterApp.Models.Weather
         public int IsDay { get; set; }
 
         [JsonPropertyName("condition")]
-        public WeatherCondition Condition { get; set; }
+        public WeatherCondition? Condition { get; set; }
 
         [JsonPropertyName("wind_mph")]
         public decimal WindMph { get; set; }
@@ -38,7 +38,7 @@ namespace _03_WetterApp.Models.Weather
         public int WindDegree { get; set; }
 
         [JsonPropertyName("wind_dir")]
-        public string WindDirection { get; set; }
+        public string? WindDirection { get; set; }
 
         [JsonPropertyName("pressure_mb")]
         public decimal PressureMb { get; set; }
