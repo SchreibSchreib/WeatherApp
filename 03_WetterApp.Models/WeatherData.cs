@@ -5,8 +5,8 @@ namespace _03_WetterApp.Models
 {
     public class WeatherData
     {
-        public CurrentWeather CurrentWeather { get; }
-        public Forecast CurrentForecast { get; }
+        public CurrentWeatherInformation CurrentWeather { get; }
+        public ForecastWeatherInformation CurrentForecast { get; }
 
         public WeatherData(IProcesseable processWeatherData)
         {

@@ -24,14 +24,14 @@ namespace _02_WetterApp.Data.Handling
             UrlForecast = GetForecastUrl();
         }
 
-        private string GetForecastUrl()
+        private string GetCurrentUrl()
         {
             return $"http://api.weatherapi.com/v1/current.json?key={_apiKey}&" +
                 $"q={_currentUser.CurrentLocation.UserCity.Name}&" +
                 $"aqi=no";
         }
 
-        private string GetCurrentUrl()
+        private string GetForecastUrl()
         {
             return $"http://api.weatherapi.com/v1/forecast.json?key={_apiKey}&" +
                 $"q={_currentUser.CurrentLocation.UserCity.Name}&" +

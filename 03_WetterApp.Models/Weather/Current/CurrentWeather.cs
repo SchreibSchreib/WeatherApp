@@ -1,14 +1,14 @@
-﻿using _03_WetterApp.Models.Weather.Current;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 
-namespace _03_WetterApp.Models.Weather
+namespace _03_WetterApp.Models.Weather.Current
 {
     public class CurrentWeather
+
     {
         [JsonPropertyName("last_updated_epoch")]
         public int LastUpdatedEpoch { get; set; }

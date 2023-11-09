@@ -9,7 +9,7 @@ namespace _03_WetterApp.Models.Abstraction.Interfaces
 {
     public interface IProcesseable
     {
-        CurrentWeather CurrentWeather { get; }
-        Forecast Forecast { get; }
+        CurrentWeatherInformation CurrentWeather { get; }
+        ForecastWeatherInformation Forecast { get; }
     }
 }

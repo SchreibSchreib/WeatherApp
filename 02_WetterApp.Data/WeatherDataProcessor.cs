@@ -7,8 +7,8 @@ namespace _02_WetterApp.Data
 {
     public class WeatherDataProcessor : IProcesseable
     {
-        public CurrentWeather CurrentWeather { get; }
-        public Forecast Forecast { get; }
+        public CurrentWeatherInformation CurrentWeather { get; }
+        public ForecastWeatherInformation Forecast { get; }
         private FileInformation _fileInformation;
         private ApiInformation _apiInformation;
         private string[]? _jsonContent;
@@ -25,25 +25,29 @@ namespace _02_WetterApp.Data
             _readeable = readeable;
             _writeable = writeable;
             _jsonContent = GetJsonContent();
-            CurrentWeather = GetCurrentWeather();
-            Forecast = GetForecast();
+            var currentWeatherTask = Task.Run(async () => await GetCurrentWeatherAsync());
+            var forecastTask = Task.Run(async () => await GetForecastAsync());
+
+            // Warten Sie auf das Ende der Tasks und setzen Sie die Ergebnisse
+            CurrentWeather = currentWeatherTask.Result;
+            Forecast = forecastTask.Result;
         }
 
-        public CurrentWeather GetCurrentWeather()
+        public async Task<CurrentWeatherInformation> GetCurrentWeatherAsync()
         {
             if (true)
             {
-                return _readeable.CurrentFromHttp(_apiInformation.UrlCurrent).Result;
+                return await _readeable.CurrentFromHttp(_apiInformation.UrlCurrent);
             }
 
             //return _readeable.CurrentFromJson(_fileInformation.ForCurrent);   <--For upcoming timestamp Logic
         }
 
-        public Forecast GetForecast()
+        public async Task<ForecastWeatherInformation> GetForecastAsync()
         {
             if (true)
             {
-                return _readeable.ForecastFromHttp(_apiInformation.UrlForecast).Result;
+                return await _readeable.ForecastFromHttp(_apiInformation.UrlForecast);
             }
 
             //return _readeable.ForecastFromJson(_fileInformation.ForForecast);   <--For upcoming timestamp Logic

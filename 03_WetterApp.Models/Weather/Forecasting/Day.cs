@@ -11,43 +11,43 @@ namespace _03_WetterApp.Models.Weather.Forecasting
     public class Day
     {
         [JsonPropertyName("maxtemp_c")]
-        public decimal MaxTempCelsius { get; set; }
+        public double MaxTempCelsius { get; set; }
 
         [JsonPropertyName("maxtemp_f")]
-        public decimal MaxTempFahrenheit { get; set; }
+        public double MaxTempFahrenheit { get; set; }
 
         [JsonPropertyName("mintemp_c")]
-        public decimal MinTempCelsius { get; set; }
+        public double MinTempCelsius { get; set; }
 
         [JsonPropertyName("mintemp_f")]
-        public decimal MinTempFahrenheit { get; set; }
+        public double MinTempFahrenheit { get; set; }
 
         [JsonPropertyName("avgtemp_c")]
-        public decimal AvgTempCelsius { get; set; }
+        public double AvgTempCelsius { get; set; }
 
         [JsonPropertyName("avgtemp_f")]
-        public decimal AvgTempFahrenheit { get; set; }
+        public double AvgTempFahrenheit { get; set; }
 
         [JsonPropertyName("maxwind_mph")]
-        public decimal MaxWindMph { get; set; }
+        public double MaxWindMph { get; set; }
 
         [JsonPropertyName("maxwind_kph")]
-        public decimal MaxWindKph { get; set; }
+        public double MaxWindKph { get; set; }
 
         [JsonPropertyName("totalprecip_mm")]
-        public decimal TotalPrecipitationMm { get; set; }
+        public double TotalPrecipitationMm { get; set; }
 
         [JsonPropertyName("totalprecip_in")]
-        public decimal TotalPrecipitationInches { get; set; }
+        public double TotalPrecipitationInches { get; set; }
 
         [JsonPropertyName("avgvis_km")]
-        public decimal AvgVisibilityKm { get; set; }
+        public double AvgVisibilityKm { get; set; }
 
         [JsonPropertyName("avgvis_miles")]
-        public decimal AvgVisibilityMiles { get; set; }
+        public double AvgVisibilityMiles { get; set; }
 
         [JsonPropertyName("avghumidity")]
-        public int AvgHumidity { get; set; }
+        public double AvgHumidity { get; set; }
 
         [JsonPropertyName("condition:text")]
         public string ConditionText { get; set; }

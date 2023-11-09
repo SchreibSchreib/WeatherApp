@@ -1,5 +1,4 @@
-﻿using _03_WetterApp.Models;
-using _03_WetterApp.Models.Abstraction.Interfaces;
+﻿using _03_WetterApp.Models.Abstraction.Interfaces;
 using _03_WetterApp.Models.Weather;
 using System.Text.Json;
 
@@ -7,7 +6,7 @@ namespace _02_WetterApp.Data.Handling
 {
     public class Load : IReadeable
     {
-        public async Task<Forecast> ForecastFromHttp(string url)
+        public async Task<ForecastWeatherInformation> ForecastFromHttp(string url)
         {
             using (HttpClient client = new HttpClient())
             {
@@ -24,7 +23,7 @@ namespace _02_WetterApp.Data.Handling
             }
         }
 
-        public async Task<CurrentWeather> CurrentFromHttp(string url)
+        public async Task<CurrentWeatherInformation> CurrentFromHttp(string url)
         {
             using (HttpClient client = new HttpClient())
             {
@@ -41,22 +40,22 @@ namespace _02_WetterApp.Data.Handling
             }
         }
 
-        public CurrentWeather CurrentFromJson(string filePath)
+        public CurrentWeatherInformation CurrentFromJson(string filePath)
         {
             string jsonContent = File.ReadAllText(filePath);
             if (jsonContent is not null)
             {
-                return JsonSerializer.Deserialize<CurrentWeather>(jsonContent);
+                return JsonSerializer.Deserialize<CurrentWeatherInformation>(jsonContent);
             }
             throw new NullReferenceException("Failed to to get current weather from Json file.");
         }
 
-        public Forecast ForecastFromJson(string filePath)
+        public ForecastWeatherInformation ForecastFromJson(string filePath)
         {
             string jsonContent = File.ReadAllText(filePath);
             if (jsonContent is not null)
             {
-                return JsonSerializer.Deserialize<Forecast>(jsonContent);
+                return JsonSerializer.Deserialize<ForecastWeatherInformation>(jsonContent);
             }
             throw new NullReferenceException("Failed to to get forecast weather from Json file.");
         }
@@ -77,15 +76,14 @@ namespace _02_WetterApp.Data.Handling
             }
         }
 
-        private async Task<Forecast> DeserializeForecastAsync(HttpResponseMessage response)
+        private async Task<ForecastWeatherInformation> DeserializeForecastAsync(HttpResponseMessage response)
         {
             if (response.IsSuccessStatusCode && response.Content is not null)
             {
-                using (Stream responseStream = await response.Content.ReadAsStreamAsync())
-                {
-                    Forecast forecast = await JsonSerializer.DeserializeAsync<Forecast>(responseStream);
-                    return forecast;
-                }
+                string jsonResponse = await response.Content.ReadAsStringAsync();
+                ForecastWeatherInformation forecast = JsonSerializer.Deserialize<ForecastWeatherInformation>(jsonResponse);
+
+                return forecast;
             }
             else
             {
@@ -93,15 +91,15 @@ namespace _02_WetterApp.Data.Handling
             }
         }
 
-        private async Task<CurrentWeather>? DeserializeCurrentAsync(HttpResponseMessage response)
+        private async Task<CurrentWeatherInformation>? DeserializeCurrentAsync(HttpResponseMessage response)
         {
             if (response.IsSuccessStatusCode && response.Content is not null)
             {
-                using (Stream responseStream = await response.Content.ReadAsStreamAsync())
-                {
-                    CurrentWeather current = await JsonSerializer.DeserializeAsync<CurrentWeather>(responseStream);
-                    return current;
-                }
+                string jsonResponse = await response.Content.ReadAsStringAsync();
+                CurrentWeatherInformation current = JsonSerializer.Deserialize<CurrentWeatherInformation>(jsonResponse);
+
+                return current;
+                
             }
             else
             {

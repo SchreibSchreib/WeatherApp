@@ -8,9 +8,9 @@ using System.Threading.Tasks;
 
 namespace _03_WetterApp.Models.Weather
 {
-    public class Forecast
+    public class ForecastWeatherInformation
     {
-        [JsonPropertyName("forecastday")]
-        public List<ForecastDay>? ForecastDays { get; set; }
+        [JsonPropertyName("forecast")]
+        public Forecast? Forecast { get; set; }
     }
 }
