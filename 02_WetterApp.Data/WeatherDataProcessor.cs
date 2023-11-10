@@ -7,8 +7,8 @@ namespace _02_WetterApp.Data
 {
     public class WeatherDataProcessor : IProcesseable
     {
-        public CurrentWeatherInformation CurrentWeather { get; }
-        public ForecastWeatherInformation Forecast { get; }
+        public CurrentWeatherInformation GetCurrentWeather { get; }
+        public ForecastWeatherInformation GetForecast { get; }
         private FileInformation _fileInformation;
         private ApiInformation _apiInformation;
         private string[]? _jsonContent;
@@ -29,8 +29,8 @@ namespace _02_WetterApp.Data
             var forecastTask = Task.Run(async () => await GetForecastAsync());
 
             // Warten Sie auf das Ende der Tasks und setzen Sie die Ergebnisse
-            CurrentWeather = currentWeatherTask.Result;
-            Forecast = forecastTask.Result;
+            GetCurrentWeather = currentWeatherTask.Result;
+            GetForecast = forecastTask.Result;
         }
 
         public async Task<CurrentWeatherInformation> GetCurrentWeatherAsync()

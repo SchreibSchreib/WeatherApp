@@ -10,8 +10,8 @@ namespace _03_WetterApp.Models
 
         public WeatherData(IProcesseable processWeatherData)
         {
-            CurrentWeather = processWeatherData.CurrentWeather;
-            CurrentForecast = processWeatherData.Forecast;
+            CurrentWeather = processWeatherData.GetCurrentWeather;
+            CurrentForecast = processWeatherData.GetForecast;
         }
     }
 }

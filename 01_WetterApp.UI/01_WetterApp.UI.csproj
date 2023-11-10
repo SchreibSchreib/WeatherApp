@@ -9,7 +9,13 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Ressources\Backgrounds\" />
+    <None Remove="Ressources\Backgrounds\SummerRainyDarkClouds.png" />
+    <None Remove="Ressources\Backgrounds\SummerSunnyNoClouds.png" />
+    <None Remove="Ressources\Backgrounds\WinterCloudsNoSnowfall.png" />
+    <None Remove="Ressources\Backgrounds\WinterCloudsSnowfall.png" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Folder Include="Sites\" />
     <Folder Include="Windows\" />
   </ItemGroup>
@@ -20,6 +26,13 @@
 
   <ItemGroup>
     <ProjectReference Include="..\02_WetterApp.Data\02_WetterApp.Data.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Ressources\Backgrounds\SummerRainyDarkClouds.png" />
+    <Resource Include="Ressources\Backgrounds\SummerSunnyNoClouds.png" />
+    <Resource Include="Ressources\Backgrounds\WinterCloudsNoSnowfall.png" />
+    <Resource Include="Ressources\Backgrounds\WinterCloudsSnowfall.png" />
   </ItemGroup>
 
 </Project>
