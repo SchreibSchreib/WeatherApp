@@ -1,4 +1,5 @@
-﻿using System;
+﻿using _03_WetterApp.Models;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -11,9 +12,10 @@ namespace _01_WetterApp.UI.Ressources.Backgrounds
     {
         public string Get { get; }
 
-        public BackgroundImagePath(BackgroundImageName imageName)
+        public BackgroundImagePath(WeatherData weatherData)
         {
-            Get = GetFullPath() + imageName.Get;
+            BackgroundImageName imageName = new BackgroundImageName(weatherData);
+            Get = Path.Combine(GetFullPath(), imageName.Get);
         }
 
         private string GetFullPath() => Directory.GetCurrentDirectory();

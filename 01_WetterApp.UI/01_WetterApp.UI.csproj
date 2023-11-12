@@ -9,10 +9,14 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="Ressources\Backgrounds\SummerRainyDarkClouds.png" />
-    <None Remove="Ressources\Backgrounds\SummerSunnyNoClouds.png" />
-    <None Remove="Ressources\Backgrounds\WinterCloudsNoSnowfall.png" />
-    <None Remove="Ressources\Backgrounds\WinterCloudsSnowfall.png" />
+    <None Remove="Ressources\Backgrounds\DayAutumnFoggy.png" />
+    <None Remove="Ressources\Backgrounds\DayAutumnNotCloudySunny.png" />
+    <None Remove="Ressources\Backgrounds\DaySpringNotCloudySunny.png" />
+    <None Remove="Ressources\Backgrounds\DaySummerCloudyRain.png" />
+    <None Remove="Ressources\Backgrounds\DaySummerNotCloudySunny.png" />
+    <None Remove="Ressources\Backgrounds\DayWinterCloudyNoSnowfall.png" />
+    <None Remove="Ressources\Backgrounds\DayWinterCloudySnowfall.png" />
+    <None Remove="Ressources\Backgrounds\DayWinterNotCloudySunny.png" />
   </ItemGroup>
 
   <ItemGroup>
@@ -29,10 +33,14 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Resource Include="Ressources\Backgrounds\SummerRainyDarkClouds.png" />
-    <Resource Include="Ressources\Backgrounds\SummerSunnyNoClouds.png" />
-    <Resource Include="Ressources\Backgrounds\WinterCloudsNoSnowfall.png" />
-    <Resource Include="Ressources\Backgrounds\WinterCloudsSnowfall.png" />
+    <Resource Include="Ressources\Backgrounds\DayAutumnFoggy.png" />
+    <Resource Include="Ressources\Backgrounds\DayAutumnNotCloudySunny.png" />
+    <Resource Include="Ressources\Backgrounds\DaySpringNotCloudySunny.png" />
+    <Resource Include="Ressources\Backgrounds\DaySummerCloudyRain.png" />
+    <Resource Include="Ressources\Backgrounds\DaySummerNotCloudySunny.png" />
+    <Resource Include="Ressources\Backgrounds\DayWinterCloudyNoSnowfall.png" />
+    <Resource Include="Ressources\Backgrounds\DayWinterCloudySnowfall.png" />
+    <Resource Include="Ressources\Backgrounds\DayWinterNotCloudySunny.png" />
   </ItemGroup>
 
 </Project>

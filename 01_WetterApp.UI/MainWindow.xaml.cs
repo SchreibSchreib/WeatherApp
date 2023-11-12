@@ -1,4 +1,5 @@
-﻿using _02_WetterApp.Data;
+﻿using _01_WetterApp.UI.Ressources.Backgrounds;
+using _02_WetterApp.Data;
 using _02_WetterApp.Data.Handling;
 using _03_WetterApp.Models;
 using Microsoft.Extensions.Configuration;
@@ -31,8 +32,11 @@ namespace _01_WetterApp.UI
             ApiInformation apiInformation = new ApiInformation(testUser, testConfig);
             Load load = new Load();
             Save save = new Save();
-
             WeatherDataProcessor weatherDataProcessor = new WeatherDataProcessor(testInfo, apiInformation,load,save);
+
+            WeatherData weatherData = new WeatherData(weatherDataProcessor);
+
+            BackgroundImagePath backgroundImagePath = new BackgroundImagePath(weatherData);
         }
     }
 }

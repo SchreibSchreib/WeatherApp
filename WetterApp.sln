@@ -15,9 +15,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		.editorconfig = .editorconfig
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02_WetterApp.Data", "02_WetterApp.Data\02_WetterApp.Data.csproj", "{5A51AD1D-6523-41C6-92DC-4B9856DE7A59}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "02_WetterApp.Data", "02_WetterApp.Data\02_WetterApp.Data.csproj", "{5A51AD1D-6523-41C6-92DC-4B9856DE7A59}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03_WetterApp.Models", "03_WetterApp.Models\03_WetterApp.Models.csproj", "{A657E30B-5A1D-486A-B9C3-C4B1777B0C42}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "03_WetterApp.Models", "03_WetterApp.Models\03_WetterApp.Models.csproj", "{A657E30B-5A1D-486A-B9C3-C4B1777B0C42}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

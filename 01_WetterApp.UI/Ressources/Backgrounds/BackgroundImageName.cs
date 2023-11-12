@@ -15,7 +15,7 @@ namespace _01_WetterApp.UI.Ressources.Backgrounds
         public BackgroundImageName(WeatherData weatherData)
         {
             _weatherData = weatherData;
-            Get = PickImage();
+            Get = PickImage() + ".png";
         }
 
         private string PickImage()
@@ -31,8 +31,15 @@ namespace _01_WetterApp.UI.Ressources.Backgrounds
 
             fileName.Append(IsDay() ? "Day" : "Night");
             fileName.Append(GetSeason());
+            if (IsFoggy())
+            {
+                fileName.Append("Foggy");
+                return fileName.ToString();
+            }
             fileName.Append(IsCloudy() ? "Cloudy" : "NotCloudy");
-            fileName.Append(IsPrecipitationHigh());
+            fileName.Append(IsPrecipitationHigh() ? "HighPrecipitation": "LowPrecipitation");
+
+            return fileName.ToString();
         }
 
         private bool IsDay() => Convert.ToBoolean(_weatherData.CurrentWeather.Current.IsDay);
@@ -61,15 +68,17 @@ namespace _01_WetterApp.UI.Ressources.Backgrounds
                 case 9:
                 case 10:
                 case 11:
-                    return "Fall";
+                    return "Autumn";
 
                 default:
                     return "Summer";
             }
         }
 
-        private bool IsCloudy() => _weatherData.CurrentWeather.Current.CloudCover > 50;
+        private bool IsCloudy() => _weatherData.CurrentWeather.Current.CloudCover > 60;
 
         private bool IsPrecipitationHigh() => _weatherData.CurrentWeather.Current.PrecipitationMm > 4;
+
+        private bool IsFoggy() => _weatherData.CurrentWeather.Current.VisibilityKm < 1;
     }
 }

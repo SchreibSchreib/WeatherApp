@@ -1,12 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.ComponentModel;
 
 namespace _01_WetterApp.UI.ViewModels
 {
-    class ViewModelBackground
+    class ViewModelBackground : INotifyPropertyChanged
     {
+        private string _backgroundImagePath;
+
+        public ViewModelBackground()
+        {
+            
+        }
+
+        public event PropertyChangedEventHandler? PropertyChanged;
     }
 }
