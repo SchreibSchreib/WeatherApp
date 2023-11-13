@@ -10,7 +10,10 @@
         MaxHeight="1080"
         MaxWidth="1920"
         Title="MainWindow" Height="1080" Width="1920">
-    <Grid Background="MediumVioletRed">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="{Binding BackgroundImagePath}"/>
+        </Grid.Background>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="0.5*"/>
             <ColumnDefinition Width="1265"/>

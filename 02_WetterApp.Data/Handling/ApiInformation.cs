@@ -1,4 +1,5 @@
 ﻿using _03_WetterApp.Models;
+using _03_WetterApp.Models.Abstraction.Interfaces;
 using Microsoft.Extensions.Configuration;
 using System;
 using System.Collections.Generic;
@@ -9,19 +10,19 @@ using System.Threading.Tasks;
 
 namespace _02_WetterApp.Data.Handling
 {
-    public class ApiInformation
+    public class ApiInformation : IInformationable
     {
-        public string UrlCurrent { get; }
-        public string UrlForecast { get; }
+        public string Current { get; }
+        public string Forecast { get; }
         private User _currentUser;
         private string? _apiKey;
 
-        public ApiInformation(User currentUser, IConfiguration config)
+        public ApiInformation(User currentUser)
         {
             _currentUser = currentUser;
-            _apiKey = config["ApiKeyWeatherApi"];
-            UrlCurrent = GetCurrentUrl();
-            UrlForecast = GetForecastUrl();
+            _apiKey = _currentUser.Configuration["ApiKeyWeatherApi"];
+            Current = GetCurrentUrl();
+            Forecast = GetForecastUrl();
         }
 
         private string GetCurrentUrl()

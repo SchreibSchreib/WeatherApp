@@ -11,10 +11,14 @@ namespace _03_WetterApp.Models
     public class User
     {
         public LocationData CurrentLocation { get; set; }
+        public IConfiguration Configuration { get; }
 
-        public User(Locator locator)
+        public User(IConfiguration config)
         {
-            CurrentLocation = new LocationData(locator);
+            Configuration = config;
+            UserIp currentIp = new UserIp();
+            Locator currentLocation = new Locator(currentIp, Configuration);
+            CurrentLocation = new LocationData(currentLocation);
         }
     }
 }

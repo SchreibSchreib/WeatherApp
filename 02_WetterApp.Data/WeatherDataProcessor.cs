@@ -9,14 +9,14 @@ namespace _02_WetterApp.Data
     {
         public CurrentWeatherInformation GetCurrentWeather { get; }
         public ForecastWeatherInformation GetForecast { get; }
-        private FileInformation _fileInformation;
-        private ApiInformation _apiInformation;
-        private string[]? _jsonContent;
+        private ITimeStampable _fileInformation;
+        private IInformationable _apiInformation;
         private IReadeable _readeable;
         private IWriteable _writeable;
+        private string[]? _jsonContent;
 
-        public WeatherDataProcessor(FileInformation fileInformation,
-            ApiInformation apiInformation,
+        public WeatherDataProcessor(ITimeStampable fileInformation,
+            IInformationable apiInformation,
             IReadeable readeable,
             IWriteable writeable)
         {
@@ -25,8 +25,8 @@ namespace _02_WetterApp.Data
             _readeable = readeable;
             _writeable = writeable;
             _jsonContent = GetJsonContent();
-            var currentWeatherTask = Task.Run(async () => await GetCurrentWeatherAsync());
-            var forecastTask = Task.Run(async () => await GetForecastAsync());
+            Task<CurrentWeatherInformation> currentWeatherTask = Task.Run(async () => await GetCurrentWeatherAsync());
+            Task<ForecastWeatherInformation> forecastTask = Task.Run(async () => await GetForecastAsync());
 
             // Warten Sie auf das Ende der Tasks und setzen Sie die Ergebnisse
             GetCurrentWeather = currentWeatherTask.Result;
@@ -37,7 +37,7 @@ namespace _02_WetterApp.Data
         {
             if (true)
             {
-                return await _readeable.CurrentFromHttp(_apiInformation.UrlCurrent);
+                return await _readeable.CurrentFromHttp(_apiInformation.Current);
             }
 
             //return _readeable.CurrentFromJson(_fileInformation.ForCurrent);   <--For upcoming timestamp Logic
@@ -47,7 +47,7 @@ namespace _02_WetterApp.Data
         {
             if (true)
             {
-                return await _readeable.ForecastFromHttp(_apiInformation.UrlForecast);
+                return await _readeable.ForecastFromHttp(_apiInformation.Forecast);
             }
 
             //return _readeable.ForecastFromJson(_fileInformation.ForForecast);   <--For upcoming timestamp Logic
@@ -55,12 +55,12 @@ namespace _02_WetterApp.Data
 
         public void SafeCurrentWeather()
         {
-            _writeable.WriteCurrentToJson(_fileInformation.ForCurrent, _jsonContent[0]);
+            _writeable.WriteCurrentToJson(_fileInformation.Current, _jsonContent[0]);
         }
 
         public void SafeForecast()
         {
-            _writeable.WriteForecastToJson(_fileInformation.ForForecast, _jsonContent[1]);
+            _writeable.WriteForecastToJson(_fileInformation.Forecast, _jsonContent[1]);
         }
 
         private string[]? GetJsonContent()
@@ -68,8 +68,8 @@ namespace _02_WetterApp.Data
             if (FilesExist())
             {
                 string[] jsonContent = new string[2];
-                jsonContent[0] = File.ReadAllText(_fileInformation.ForCurrent);
-                jsonContent[1] = File.ReadAllText(_fileInformation.ForForecast);
+                jsonContent[0] = File.ReadAllText(_fileInformation.Current);
+                jsonContent[1] = File.ReadAllText(_fileInformation.Forecast);
 
                 return jsonContent;
             }
@@ -78,7 +78,7 @@ namespace _02_WetterApp.Data
             return null;
         }
 
-        private bool FilesExist() => File.Exists(_fileInformation.ForCurrent) && File.Exists(_fileInformation.ForForecast);
+        private bool FilesExist() => File.Exists(_fileInformation.Current) && File.Exists(_fileInformation.Forecast);
 
     }
 }
