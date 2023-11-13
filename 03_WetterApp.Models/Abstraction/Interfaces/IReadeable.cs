@@ -9,9 +9,9 @@ namespace _03_WetterApp.Models.Abstraction.Interfaces
 {
     public interface IReadeable
     {
-       Task<ForecastWeatherInformation>? ForecastFromHttp(string url);
-       Task<CurrentWeatherInformation>? CurrentFromHttp(string url);
-       ForecastWeatherInformation? ForecastFromJson(string filePath);
-       CurrentWeatherInformation? CurrentFromJson(string filePath);
+       Task<ForecastWeatherInformation> ForecastFromHttp(string url);
+       Task<CurrentWeatherInformation> CurrentFromHttp(string url);
+       ForecastWeatherInformation ForecastFromJson(string filePath);
+       CurrentWeatherInformation CurrentFromJson(string filePath);
     }
 }

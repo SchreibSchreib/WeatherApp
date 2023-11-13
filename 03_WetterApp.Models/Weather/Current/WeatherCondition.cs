@@ -10,10 +10,10 @@ namespace _03_WetterApp.Models.Weather.Current
     public class WeatherCondition
     {
         [JsonPropertyName("text")]
-        public string Text { get; set; }
+        public string? Text { get; set; }
 
         [JsonPropertyName("icon")]
-        public string Icon { get; set; }
+        public string? Icon { get; set; }
 
         [JsonPropertyName("code")]
         public int Code { get; set; }

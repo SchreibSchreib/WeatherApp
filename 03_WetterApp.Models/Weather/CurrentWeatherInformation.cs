@@ -12,6 +12,6 @@ namespace _03_WetterApp.Models.Weather
     public class CurrentWeatherInformation
     {
         [JsonPropertyName("current")]
-        public CurrentWeather Current { get; set; }
+        public CurrentWeather? Current { get; set; }
     }
 }

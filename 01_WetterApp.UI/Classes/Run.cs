@@ -17,7 +17,7 @@ namespace _01_WetterApp.UI.Classes
     {
         public WeatherData WeatherData { get; }
 
-        private IConfiguration? _config;
+        private IConfiguration _config;
         private ITimeStampable _fileData;
         private IInformationable _apiData;
         private IReadeable _loadData;
@@ -33,7 +33,7 @@ namespace _01_WetterApp.UI.Classes
             WeatherData = GetWeatherData();
         }
 
-        private IConfiguration? GetConfig()
+        private IConfiguration GetConfig()
         {
             IConfiguration? config = new Configuration().Config;
 

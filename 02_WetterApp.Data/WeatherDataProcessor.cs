@@ -55,12 +55,18 @@ namespace _02_WetterApp.Data
 
         public void SafeCurrentWeather()
         {
-            _writeable.WriteCurrentToJson(_fileInformation.Current, _jsonContent[0]);
+            if (_jsonContent != null)
+            {
+                _writeable.WriteCurrentToJson(_fileInformation.Current, _jsonContent[0]);
+            }
         }
 
         public void SafeForecast()
         {
-            _writeable.WriteForecastToJson(_fileInformation.Forecast, _jsonContent[1]);
+            if (_jsonContent != null)
+            {
+                _writeable.WriteForecastToJson(_fileInformation.Forecast, _jsonContent[1]);
+            }
         }
 
         private string[]? GetJsonContent()

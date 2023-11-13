@@ -13,7 +13,7 @@ namespace _03_WetterApp.Models.Weather.Forecasting.Hourly
         public int TimeEpoch { get; set; }
 
         [JsonPropertyName("time")]
-        public string Time { get; set; }
+        public string? Time { get; set; }
 
         [JsonPropertyName("temp_c")]
         public decimal TemperatureCelsius { get; set; }
@@ -22,10 +22,10 @@ namespace _03_WetterApp.Models.Weather.Forecasting.Hourly
         public decimal TemperatureFahrenheit { get; set; }
 
         [JsonPropertyName("condition:text")]
-        public string ConditionText { get; set; }
+        public string? ConditionText { get; set; }
 
         [JsonPropertyName("condition:icon")]
-        public string ConditionIcon { get; set; }
+        public string? ConditionIcon { get; set; }
 
         [JsonPropertyName("condition:code")]
         public int ConditionCode { get; set; }
@@ -40,7 +40,7 @@ namespace _03_WetterApp.Models.Weather.Forecasting.Hourly
         public int WindDegree { get; set; }
 
         [JsonPropertyName("wind_dir")]
-        public string WindDirection { get; set; }
+        public string? WindDirection { get; set; }
 
         [JsonPropertyName("pressure_mb")]
         public decimal PressureMb { get; set; }

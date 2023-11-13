@@ -50,10 +50,10 @@ namespace _03_WetterApp.Models.Weather.Forecasting
         public decimal AvgHumidity { get; set; }
 
         [JsonPropertyName("condition:text")]
-        public string ConditionText { get; set; }
+        public string? ConditionText { get; set; }
 
         [JsonPropertyName("condition:icon")]
-        public string ConditionIcon { get; set; }
+        public string? ConditionIcon { get; set; }
 
         [JsonPropertyName("condition:code")]
         public int ConditionCode { get; set; }
