@@ -1,4 +1,5 @@
 ﻿using _03_WetterApp.Models.Abstraction.Interfaces;
+using _03_WetterApp.Models.Logs;
 using _03_WetterApp.Models.Weather;
 using System.Text.Json;
 
@@ -18,6 +19,7 @@ namespace _02_WetterApp.Data.Handling
                 }
                 catch (Exception ex)
                 {
+                    Logger.LogException(nameof(Load), ex);
                     throw new Exception("Failed to get Weatherdata. Error: " + ex.Message);
                 }
             }
@@ -35,6 +37,7 @@ namespace _02_WetterApp.Data.Handling
                 }
                 catch (Exception ex)
                 {
+                    Logger.LogException(nameof(Load), ex);
                     throw new Exception("Failed to get Weatherdata. Error: " + ex.Message);
                 }
             }
@@ -43,29 +46,39 @@ namespace _02_WetterApp.Data.Handling
         public CurrentWeatherInformation CurrentFromJson(string filePath)
         {
             string jsonContent = File.ReadAllText(filePath);
-            if (jsonContent is not null)
+            try
             {
                 CurrentWeatherInformation? current = JsonSerializer.Deserialize<CurrentWeatherInformation>(jsonContent);
                 if (current != null)
                 {
                     return current;
                 }
+                throw new NullReferenceException("Failed to to get current weather from Json file.");
             }
-            throw new NullReferenceException("Failed to to get current weather from Json file.");
+            catch (Exception ex)
+            {
+                Logger.LogException(nameof(Load), ex);
+                throw new Exception("Failed to to get forecast weather from Json file." + ex);
+            }
         }
 
         public ForecastWeatherInformation ForecastFromJson(string filePath)
         {
             string jsonContent = File.ReadAllText(filePath);
-            if (jsonContent is not null)
+            try
             {
                 ForecastWeatherInformation? acutalForecast = JsonSerializer.Deserialize<ForecastWeatherInformation>(jsonContent);
                 if (acutalForecast != null)
                 {
                     return acutalForecast;
                 }
+                throw new NullReferenceException("Failed to to get forecast weather from Json file.");
             }
-            throw new NullReferenceException("Failed to to get forecast weather from Json file.");
+            catch (Exception ex)
+            {
+                Logger.LogException(nameof(Load), ex);
+                throw new Exception("Failed to to get forecast weather from Json file." + ex);
+            }
         }
 
         private async Task<HttpResponseMessage> SendHttpRequestAsync(string url)
@@ -79,6 +92,7 @@ namespace _02_WetterApp.Data.Handling
                 }
                 catch (HttpRequestException ex)
                 {
+                    Logger.LogException(nameof(Load), ex);
                     throw new HttpRequestException("HTTP-Request failed" + ex.Message);
                 }
             }
@@ -86,43 +100,48 @@ namespace _02_WetterApp.Data.Handling
 
         private async Task<ForecastWeatherInformation> DeserializeForecastAsync(HttpResponseMessage response)
         {
-            if (response.IsSuccessStatusCode && response.Content is not null)
+            try
             {
-                string jsonResponse = await response.Content.ReadAsStringAsync();
-                ForecastWeatherInformation? forecast = JsonSerializer.Deserialize<ForecastWeatherInformation>(jsonResponse);
-
-                if (forecast != null)
+                if (response.IsSuccessStatusCode && response.Content is not null)
                 {
-                    return forecast;
+                    string jsonResponse = await response.Content.ReadAsStringAsync();
+                    ForecastWeatherInformation? forecast = JsonSerializer.Deserialize<ForecastWeatherInformation>(jsonResponse);
+
+                    if (forecast != null)
+                    {
+                        return forecast;
+                    }
                 }
-
                 throw new JsonException("Deserialization of HttpResponse for forecast weather failed");
-
             }
-            else
+            catch (Exception ex)
             {
-                throw new HttpRequestException($"HTTP-Anfrage fehlgeschlagen: {response.StatusCode}");
+                Logger.LogException(nameof(Load), ex);
+                throw new Exception($"HTTP-Anfrage fehlgeschlagen: {response.StatusCode}");
             }
         }
 
         private async Task<CurrentWeatherInformation> DeserializeCurrentAsync(HttpResponseMessage response)
         {
-            if (response.IsSuccessStatusCode && response.Content is not null)
+            try
             {
-                string jsonResponse = await response.Content.ReadAsStringAsync();
-                CurrentWeatherInformation? current = JsonSerializer.Deserialize<CurrentWeatherInformation>(jsonResponse);
-
-                if (current != null)
+                if (response.IsSuccessStatusCode && response.Content is not null)
                 {
-                    return current;
+                    string jsonResponse = await response.Content.ReadAsStringAsync();
+                    CurrentWeatherInformation? current = JsonSerializer.Deserialize<CurrentWeatherInformation>(jsonResponse);
+
+                    if (current != null)
+                    {
+                        return current;
+                    }
+
                 }
-
                 throw new JsonException("Deserialization of HttpResponse for current weather failed");
-
             }
-            else
+            catch (Exception ex)
             {
-                throw new HttpRequestException($"HTTP-Anfrage fehlgeschlagen: {response.StatusCode}");
+                Logger.LogException(nameof(Load), ex);
+                throw new Exception($"HTTP-Anfrage fehlgeschlagen: {response.StatusCode}");
             }
         }
     }

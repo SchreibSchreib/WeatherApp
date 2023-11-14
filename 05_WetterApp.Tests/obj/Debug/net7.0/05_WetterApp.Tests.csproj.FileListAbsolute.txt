@@ -196,6 +196,3 @@ E:\VisualStudio\repos\WeatherApp\05_WetterApp.Tests\obj\Debug\net7.0\refint\05_W
 E:\VisualStudio\repos\WeatherApp\05_WetterApp.Tests\obj\Debug\net7.0\05_WetterApp.Tests.pdb
 E:\VisualStudio\repos\WeatherApp\05_WetterApp.Tests\obj\Debug\net7.0\05_WetterApp.Tests.genruntimeconfig.cache
 E:\VisualStudio\repos\WeatherApp\05_WetterApp.Tests\obj\Debug\net7.0\ref\05_WetterApp.Tests.dll
-E:\VisualStudio\repos\WeatherApp\05_WetterApp.Tests\bin\Debug\net7.0\01_WetterApp.UI.deps.json
-E:\VisualStudio\repos\WeatherApp\05_WetterApp.Tests\bin\Debug\net7.0\01_WetterApp.UI.runtimeconfig.json
-E:\VisualStudio\repos\WeatherApp\05_WetterApp.Tests\bin\Debug\net7.0\01_WetterApp.UI.exe

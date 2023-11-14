@@ -36,3 +36,8 @@ E:\VisualStudio\repos\WeatherApp\01_WetterApp.UI\obj\Release\net7.0-windows\refi
 E:\VisualStudio\repos\WeatherApp\01_WetterApp.UI\obj\Release\net7.0-windows\01_WetterApp.UI.pdb
 E:\VisualStudio\repos\WeatherApp\01_WetterApp.UI\obj\Release\net7.0-windows\01_WetterApp.UI.genruntimeconfig.cache
 E:\VisualStudio\repos\WeatherApp\01_WetterApp.UI\obj\Release\net7.0-windows\ref\01_WetterApp.UI.dll
+E:\VisualStudio\repos\WeatherApp\01_WetterApp.UI\bin\Release\net7.0-windows\Ressources\Backgrounds\NightAutumnCloudyHighPrecipitation.png
+E:\VisualStudio\repos\WeatherApp\01_WetterApp.UI\bin\Release\net7.0-windows\Ressources\Backgrounds\NightAutumnCloudyLowPrecipitation.png
+E:\VisualStudio\repos\WeatherApp\01_WetterApp.UI\bin\Release\net7.0-windows\Ressources\Backgrounds\NightWinterCloudyHighPrecipitation.png
+E:\VisualStudio\repos\WeatherApp\01_WetterApp.UI\bin\Release\net7.0-windows\Ressources\Backgrounds\NightWinterCloudyLowPrecipitation.png
+E:\VisualStudio\repos\WeatherApp\01_WetterApp.UI\bin\Release\net7.0-windows\Ressources\Backgrounds\NightWinterNotCloudyLowPrecipitation.png

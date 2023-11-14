@@ -21,7 +21,12 @@
     <None Remove="Ressources\Backgrounds\DaySummerFoggy.png" />
     <None Remove="Ressources\Backgrounds\DayWinterCloudyHighPrecipitation.png" />
     <None Remove="Ressources\Backgrounds\DayWinterFoggy.png" />
+    <None Remove="Ressources\Backgrounds\NightAutumnCloudyHighPrecipitation.png" />
+    <None Remove="Ressources\Backgrounds\NightAutumnCloudyLowPrecipitation.png" />
     <None Remove="Ressources\Backgrounds\NightSpringNotCloudyLowPrecipitation.png" />
+    <None Remove="Ressources\Backgrounds\NightWinterCloudyHighPrecipitation.png" />
+    <None Remove="Ressources\Backgrounds\NightWinterCloudyLowPrecipitation.png" />
+    <None Remove="Ressources\Backgrounds\NightWinterNotCloudyLowPrecipitation.png" />
   </ItemGroup>
 
   <ItemGroup>
@@ -38,6 +43,12 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="Ressources\Backgrounds\NightAutumnCloudyHighPrecipitation.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Ressources\Backgrounds\NightAutumnCloudyLowPrecipitation.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
     <Resource Include="Ressources\Backgrounds\NightSpringNotCloudyLowPrecipitation.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
@@ -72,6 +83,15 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Ressources\Backgrounds\DayWinterNotCloudyLowPrecipitation.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Ressources\Backgrounds\NightWinterCloudyHighPrecipitation.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Ressources\Backgrounds\NightWinterCloudyLowPrecipitation.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Ressources\Backgrounds\NightWinterNotCloudyLowPrecipitation.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
   </ItemGroup>

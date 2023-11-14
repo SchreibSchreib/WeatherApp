@@ -1,3 +1,8 @@
+C:\Users\felix\OneDrive\Desktop\TestWetterApp\Ressources\Backgrounds\NightAutumnCloudyHighPrecipitation.png
+C:\Users\felix\OneDrive\Desktop\TestWetterApp\Ressources\Backgrounds\NightAutumnCloudyLowPrecipitation.png
+C:\Users\felix\OneDrive\Desktop\TestWetterApp\Ressources\Backgrounds\NightWinterCloudyHighPrecipitation.png
+C:\Users\felix\OneDrive\Desktop\TestWetterApp\Ressources\Backgrounds\NightWinterCloudyLowPrecipitation.png
+C:\Users\felix\OneDrive\Desktop\TestWetterApp\Ressources\Backgrounds\NightWinterNotCloudyLowPrecipitation.png
 C:\Users\felix\OneDrive\Desktop\TestWetterApp\01_WetterApp.UI.exe
 C:\Users\felix\OneDrive\Desktop\TestWetterApp\01_WetterApp.UI.dll
 C:\Users\felix\OneDrive\Desktop\TestWetterApp\01_WetterApp.UI.deps.json
