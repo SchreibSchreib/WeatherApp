@@ -47,7 +47,7 @@ namespace _03_WetterApp.Models.Weather.Current
         public decimal PressureIn { get; set; }
 
         [JsonPropertyName("precip_mm")]
-        public decimal PrecipitationMm { get; set; }
+        public double PrecipitationMm { get; set; }
 
         [JsonPropertyName("precip_in")]
         public decimal PrecipitationInches { get; set; }

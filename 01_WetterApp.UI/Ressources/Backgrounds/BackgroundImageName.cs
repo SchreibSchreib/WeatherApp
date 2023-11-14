@@ -77,7 +77,7 @@ namespace _01_WetterApp.UI.Ressources.Backgrounds
 
         private bool IsCloudy() => _weatherData.CurrentWeather.Current.CloudCover > 60;
 
-        private bool IsPrecipitationHigh() => _weatherData.CurrentWeather.Current.PrecipitationMm > 4;
+        private bool IsPrecipitationHigh() => _weatherData.CurrentWeather.Current.PrecipitationMm > 1.5;
 
         private bool IsFoggy() => _weatherData.CurrentWeather.Current.VisibilityKm < 1;
     }
