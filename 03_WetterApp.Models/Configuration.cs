@@ -24,7 +24,6 @@ namespace _03_WetterApp.Models
             .Build();
 
             return config;
-            
         }
     }
 }

@@ -13,3 +13,4 @@ E:\VisualStudio\repos\WeatherApp\02_WetterApp.Data\obj\Release\net7.0\02_WetterA
 E:\VisualStudio\repos\WeatherApp\02_WetterApp.Data\obj\Release\net7.0\refint\02_WetterApp.Data.dll
 E:\VisualStudio\repos\WeatherApp\02_WetterApp.Data\obj\Release\net7.0\02_WetterApp.Data.pdb
 E:\VisualStudio\repos\WeatherApp\02_WetterApp.Data\obj\Release\net7.0\ref\02_WetterApp.Data.dll
+E:\VisualStudio\repos\WeatherApp\02_WetterApp.Data\bin\Release\net7.0\Config.json

@@ -12,33 +12,17 @@ namespace _01_WetterApp.UI.Ressources.Backgrounds
     class BackgroundImagePath
     {
         public string Get { get; }
-        private string _parentDirectory;
+        private string _currentDirectory;
 
         public BackgroundImagePath(WeatherData weatherData)
         {
             BackgroundImageName imageName = new BackgroundImageName(weatherData);
-            _parentDirectory = GetParentDirectory();
+            _currentDirectory = GetParentDirectory();
             Get = Path.Combine(GetFullPath(), imageName.Get);
         }
 
-        private string GetParentDirectory()
-        {
-            string? parentDirectory = Directory.GetParent(Directory.GetCurrentDirectory())
-                ?.Parent
-                ?.Parent
-                ?.FullName;
+        private string GetParentDirectory() => Directory.GetCurrentDirectory();
 
-            if (parentDirectory != null)
-            {
-                return parentDirectory;
-            }
-            MessageBox.Show("Could not find the Ressources Folder." +
-                "Program will shut down.");
-
-            throw new FileNotFoundException();
-
-        }
-
-        private string GetFullPath() => Path.Combine(_parentDirectory, "Ressources", "Backgrounds");
+        private string GetFullPath() => Path.Combine(_currentDirectory, "Ressources", "Backgrounds");
     }
 }

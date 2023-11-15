@@ -43,57 +43,57 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Resource Include="Ressources\Backgrounds\NightAutumnCloudyHighPrecipitation.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Resource>
-    <Resource Include="Ressources\Backgrounds\NightAutumnCloudyLowPrecipitation.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Resource>
-    <Resource Include="Ressources\Backgrounds\NightSpringNotCloudyLowPrecipitation.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Resource>
-    <Resource Include="Ressources\Backgrounds\DaySpringFoggy.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Resource>
-    <Resource Include="Ressources\Backgrounds\DaySummerFoggy.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Resource>
-    <Resource Include="Ressources\Backgrounds\DayWinterFoggy.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Resource>
-    <Resource Include="Ressources\Backgrounds\DayAutumnFoggy.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Resource>
-    <Resource Include="Ressources\Backgrounds\DayAutumnCloudyLowPrecipitation.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Resource>
-    <Resource Include="Ressources\Backgrounds\DaySpringNotCloudyLowPrecipitation.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Resource>
-    <Resource Include="Ressources\Backgrounds\DaySummerCloudyHighPrecipitation.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Resource>
-    <Resource Include="Ressources\Backgrounds\DaySummerNotCloudyLowPrecipitation.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Resource>
-    <Resource Include="Ressources\Backgrounds\DayWinterCloudyLowPrecipitation.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Resource>
-    <Resource Include="Ressources\Backgrounds\DayWinterCloudyHighPrecipitation.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Resource>
-    <Resource Include="Ressources\Backgrounds\DayWinterNotCloudyLowPrecipitation.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Resource>
-    <Resource Include="Ressources\Backgrounds\NightWinterCloudyHighPrecipitation.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Resource>
-    <Resource Include="Ressources\Backgrounds\NightWinterCloudyLowPrecipitation.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Resource>
-    <Resource Include="Ressources\Backgrounds\NightWinterNotCloudyLowPrecipitation.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Resource>
+    <EmbeddedResource Include="Ressources\Backgrounds\NightAutumnCloudyHighPrecipitation.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ressources\Backgrounds\NightAutumnCloudyLowPrecipitation.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ressources\Backgrounds\NightSpringNotCloudyLowPrecipitation.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ressources\Backgrounds\DaySpringFoggy.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ressources\Backgrounds\DaySummerFoggy.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ressources\Backgrounds\DayWinterFoggy.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ressources\Backgrounds\DayAutumnFoggy.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ressources\Backgrounds\DayAutumnCloudyLowPrecipitation.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ressources\Backgrounds\DaySpringNotCloudyLowPrecipitation.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ressources\Backgrounds\DaySummerCloudyHighPrecipitation.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ressources\Backgrounds\DaySummerNotCloudyLowPrecipitation.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ressources\Backgrounds\DayWinterCloudyLowPrecipitation.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ressources\Backgrounds\DayWinterCloudyHighPrecipitation.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ressources\Backgrounds\DayWinterNotCloudyLowPrecipitation.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ressources\Backgrounds\NightWinterCloudyHighPrecipitation.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ressources\Backgrounds\NightWinterCloudyLowPrecipitation.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ressources\Backgrounds\NightWinterNotCloudyLowPrecipitation.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
   </ItemGroup>
 
 </Project>

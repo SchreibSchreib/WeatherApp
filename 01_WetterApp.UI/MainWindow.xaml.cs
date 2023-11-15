@@ -17,9 +17,19 @@ namespace _01_WetterApp.UI
     {
         public MainWindow()
         {
-            Run startUp = new Run();
-            InitializeComponent();
-            DataContext = new ViewModelBackground(new BackgroundImagePath(startUp.WeatherData));
+            try
+            {
+                Run startUp = new Run();
+                InitializeComponent();
+                DataContext = new ViewModelBackground(new BackgroundImagePath(startUp.WeatherData));
+                MessageBox.Show(new BackgroundImagePath(startUp.WeatherData).Get);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+                MessageBox.Show(ex.StackTrace);
+                throw new Exception(ex.Message);
+            }
         }
 
         private void Location_Initialized(object sender, EventArgs e)
