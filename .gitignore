@@ -1,3 +1,13 @@
 ﻿/03_WetterApp.Models/Config.json
 
-**/bin/Release/
+/01_WetterApp.UI/bin/
+/01_WetterApp.UI/obj/
+/02_WetterApp.Data/bin/
+/02_WetterApp.Data/obj/
+/03_WetterApp.Models/bin/
+/03_WetterApp.Models/obj/
+/05_WetterApp.Tests/bin/
+/05_WetterApp.Tests/obj/
+
+
+
