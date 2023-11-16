@@ -1,7 +1,12 @@
-﻿/03_WetterApp.Models/Config.json
+﻿.github/
+.vs/
+.editorconfig
+
+/03_WetterApp.Models/Config.json
 
 /01_WetterApp.UI/bin/
 /01_WetterApp.UI/obj/
+/01_WetterApp.UI/Properties/
 /02_WetterApp.Data/bin/
 /02_WetterApp.Data/obj/
 /03_WetterApp.Models/bin/

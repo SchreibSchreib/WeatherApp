@@ -1,4 +1,0 @@
-﻿[*.cs]
-
-# SYSLIB0014: Typ oder Element ist veraltet
-dotnet_diagnostic.SYSLIB0014.severity = none
