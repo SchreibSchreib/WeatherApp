@@ -1,4 +1,5 @@
 ﻿using _01_WetterApp.UI.Ressources.Backgrounds;
+using _01_WetterApp.UI.Ressources.Icons;
 using System;
 using System.ComponentModel;
 
@@ -7,6 +8,7 @@ namespace _01_WetterApp.UI.ViewModels
     class ViewModelBackground : INotifyPropertyChanged
     {
         private string _backgroundImagePath;
+        private string _iconPath;
 
         public string BackgroundImagePath
         {
@@ -21,9 +23,23 @@ namespace _01_WetterApp.UI.ViewModels
             }
         }
 
-        public ViewModelBackground(BackgroundImagePath pathOfImage)
+        public string IconPath
+        {
+            get { return _iconPath; }
+            set
+            {
+                if (_iconPath != value)
+                {
+                    _iconPath = value;
+                    OnPropertyChanged(nameof(IconPath));
+                }
+            }
+        }
+
+        public ViewModelBackground(BackgroundImagePath pathOfImage,IconPath iconPath)
         {
             _backgroundImagePath = pathOfImage.Get;
+            _iconPath = iconPath.Get;
         }
 
         public event PropertyChangedEventHandler? PropertyChanged;

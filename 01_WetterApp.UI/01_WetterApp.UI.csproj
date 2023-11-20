@@ -9,8 +9,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Ressources\Backgrounds\DayAutumnCloudyHighPrecipitation.png" />
     <None Remove="Ressources\Backgrounds\DayAutumnCloudyLowPrecipitation.png" />
     <None Remove="Ressources\Backgrounds\DayAutumnFoggy.png" />
+    <None Remove="Ressources\Backgrounds\DayAutumnNotCloudyLowPrecipitation.png" />
     <None Remove="Ressources\Backgrounds\DaySpringNotCloudyLowPrecipitation.png" />
     <None Remove="Ressources\Backgrounds\DaySummerCloudyHighPrecipitation.png" />
     <None Remove="Ressources\Backgrounds\DaySummerNotCloudyLowPrecipitation.png" />
@@ -23,10 +25,19 @@
     <None Remove="Ressources\Backgrounds\DayWinterFoggy.png" />
     <None Remove="Ressources\Backgrounds\NightAutumnCloudyHighPrecipitation.png" />
     <None Remove="Ressources\Backgrounds\NightAutumnCloudyLowPrecipitation.png" />
+    <None Remove="Ressources\Backgrounds\NightAutumnNotCloudyLowPrecipitation.png" />
+    <None Remove="Ressources\Backgrounds\NightSpringCloudyHighPrecipitation.png" />
+    <None Remove="Ressources\Backgrounds\NightSpringCloudyLowPrecipitation.png" />
     <None Remove="Ressources\Backgrounds\NightSpringNotCloudyLowPrecipitation.png" />
+    <None Remove="Ressources\Backgrounds\NightSummerCloudyHighPrecipitation.png" />
+    <None Remove="Ressources\Backgrounds\NightSummerCloudyLowPrecipitation.png" />
     <None Remove="Ressources\Backgrounds\NightWinterCloudyHighPrecipitation.png" />
     <None Remove="Ressources\Backgrounds\NightWinterCloudyLowPrecipitation.png" />
     <None Remove="Ressources\Backgrounds\NightWinterNotCloudyLowPrecipitation.png" />
+    <None Remove="Ressources\Icons\Cloud100x100.png" />
+    <None Remove="Ressources\Icons\Moon100x100.png" />
+    <None Remove="Ressources\Icons\Rain100x100.png" />
+    <None Remove="Ressources\Icons\Sun100x100.png" />
   </ItemGroup>
 
   <ItemGroup>
@@ -43,10 +54,25 @@
   </ItemGroup>
 
   <ItemGroup>
+    <EmbeddedResource Include="Ressources\Backgrounds\DayAutumnCloudyHighPrecipitation.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ressources\Backgrounds\DayAutumnNotCloudyLowPrecipitation.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
     <EmbeddedResource Include="Ressources\Backgrounds\NightAutumnCloudyHighPrecipitation.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
     <EmbeddedResource Include="Ressources\Backgrounds\NightAutumnCloudyLowPrecipitation.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ressources\Backgrounds\NightAutumnNotCloudyLowPrecipitation.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ressources\Backgrounds\NightSpringCloudyHighPrecipitation.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ressources\Backgrounds\NightSpringCloudyLowPrecipitation.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
     <EmbeddedResource Include="Ressources\Backgrounds\NightSpringNotCloudyLowPrecipitation.png">
@@ -85,6 +111,12 @@
     <EmbeddedResource Include="Ressources\Backgrounds\DayWinterNotCloudyLowPrecipitation.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
+    <EmbeddedResource Include="Ressources\Backgrounds\NightSummerCloudyHighPrecipitation.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ressources\Backgrounds\NightSummerCloudyLowPrecipitation.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
     <EmbeddedResource Include="Ressources\Backgrounds\NightWinterCloudyHighPrecipitation.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
@@ -92,6 +124,18 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
     <EmbeddedResource Include="Ressources\Backgrounds\NightWinterNotCloudyLowPrecipitation.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ressources\Icons\Cloud100x100.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ressources\Icons\Moon100x100.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ressources\Icons\Rain100x100.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ressources\Icons\Sun100x100.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
   </ItemGroup>
