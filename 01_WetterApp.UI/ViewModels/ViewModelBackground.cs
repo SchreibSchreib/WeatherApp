@@ -8,7 +8,9 @@ namespace _01_WetterApp.UI.ViewModels
     class ViewModelBackground : INotifyPropertyChanged
     {
         private string _backgroundImagePath;
-        private string _iconPath;
+        private string _hourIconPath;
+        private string _minuteIconPath;
+        private string _secondIconPath;
 
         public string BackgroundImagePath
         {
@@ -23,14 +25,40 @@ namespace _01_WetterApp.UI.ViewModels
             }
         }
 
-        public string IconPath
+        public string HourIconPath
         {
-            get { return _iconPath; }
+            get { return _hourIconPath; }
             set
             {
-                if (_iconPath != value)
+                if (_hourIconPath != value)
                 {
-                    _iconPath = value;
+                    _hourIconPath = value;
+                    OnPropertyChanged(nameof(IconPath));
+                }
+            }
+        }
+
+        public string MinuteIconPath
+        {
+            get { return _minuteIconPath; }
+            set
+            {
+                if (_hourIconPath != value)
+                {
+                    _hourIconPath = value;
+                    OnPropertyChanged(nameof(IconPath));
+                }
+            }
+        }
+
+        public string SecondIconPath
+        {
+            get { return _secondIconPath; }
+            set
+            {
+                if (_hourIconPath != value)
+                {
+                    _hourIconPath = value;
                     OnPropertyChanged(nameof(IconPath));
                 }
             }
@@ -39,7 +67,9 @@ namespace _01_WetterApp.UI.ViewModels
         public ViewModelBackground(BackgroundImagePath pathOfImage,IconPath iconPath)
         {
             _backgroundImagePath = pathOfImage.Get;
-            _iconPath = iconPath.Get;
+            _hourIconPath = iconPath.Get[0];
+            _minuteIconPath = iconPath.Get[1];
+            _secondIconPath = iconPath.Get[2];
         }
 
         public event PropertyChangedEventHandler? PropertyChanged;

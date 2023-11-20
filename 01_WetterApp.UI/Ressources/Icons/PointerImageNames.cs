@@ -7,33 +7,34 @@ using System.Threading.Tasks;
 
 namespace _01_WetterApp.UI.Ressources.Icons
 {
-    internal class IconImageName
+    internal class PointerImageNames
     {
-        public string Get { get; }
+        public string[] Get { get; }
 
         private WeatherData _weatherData;
 
-        public IconImageName(WeatherData weatherData)
+        public PointerImageNames(WeatherData weatherData)
         {
             _weatherData = weatherData;
-            Get = PickIcon() + ".png";
+            Get = PickIcon();
         }
 
-        private string PickIcon()
+        private string[] PickIcon()
         {
-            string nameOfIcon = Evaluate();
+            string[] nameOfIcon = Evaluate();
 
             return nameOfIcon;
         }
 
-        private string Evaluate()
+        private string[] Evaluate()
         {
-            string fileName;
+            string[] pointerIcon = new string[3];
 
-            if (IsPrecipitationHigh()) return "Rain100x100";
-            if (IsCloudy()) return "Cloud100x100";
-            if (IsDay()) return "Sun100x100";
-            return "Moon100x100";
+            pointerIcon[0] = IsDay() ? "Sun100x100" : "Moon100x100";
+            pointerIcon[1] = IsPrecipitationHigh() ? "Rain100x100" : "NoRain100x100";
+            pointerIcon[2] = IsCloudy() ? "Cloud100x100" : "NoCloud100x100";
+
+            return pointerIcon;
         }
 
         private bool IsDay() => Convert.ToBoolean(_weatherData.CurrentWeather.Current.IsDay);

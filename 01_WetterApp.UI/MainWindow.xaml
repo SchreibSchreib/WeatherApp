@@ -37,8 +37,9 @@
             </Grid.RowDefinitions>
             <Border Grid.ColumnSpan="3" Grid.RowSpan="3" BorderThickness="5" CornerRadius="800" BorderBrush="Aqua" Background="#7CFAEBD7" Margin="96"/>
             <Grid Grid.Row="1" Grid.Column="1">
-                <Image x:Name="timeEllipse" Source="{Binding IconPath}" Height="100" Width="100" Grid.Column="1" Grid.Row="1">
-                </Image>
+                <Image x:Name="hourIcon" Source="{Binding HourIconPath}" Height="100" Width="100" Grid.Column="1" Grid.Row="1"/>
+                <Image x:Name="minuteIcon" Source="{Binding MinuteIconPath}" Height="100" Width="100" Grid.Column="1" Grid.Row="1"/>
+                <Image x:Name="secondIcon" Source="{Binding SecondIconPath}" Height="100" Width="100" Grid.Column="1" Grid.Row="1"/>
                 <StackPanel>
 
                 </StackPanel>

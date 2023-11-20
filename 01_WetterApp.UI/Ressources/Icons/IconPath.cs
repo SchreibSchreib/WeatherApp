@@ -11,18 +11,28 @@ namespace _01_WetterApp.UI.Ressources.Icons
 {
     internal class IconPath
     {
-        public string Get { get; }
+        public string[] Get { get; }
         private string _currentDirectory;
 
         public IconPath(WeatherData weatherData)
         {
-            IconImageName imageName = new IconImageName(weatherData);
+            PointerImageNames imageName = new PointerImageNames(weatherData);
             _currentDirectory = GetParentDirectory();
-            Get = Path.Combine(GetFullPath(), imageName.Get);
+            Get = GetFullPath(imageName);
         }
 
         private string GetParentDirectory() => Directory.GetCurrentDirectory();
 
-        private string GetFullPath() => Path.Combine(_currentDirectory, "Ressources", "Icons");
+        private string[] GetFullPath(PointerImageNames currentPointer)
+        {
+            string[] pointerIcons =
+            {
+                 Path.Combine(_currentDirectory, "Ressources", "Icons",currentPointer.Get[0])  + ".png",
+                 Path.Combine(_currentDirectory, "Ressources", "Icons",currentPointer.Get[1])  + ".png",
+                 Path.Combine(_currentDirectory, "Ressources", "Icons",currentPointer.Get[2])  + ".png"
+            };
+            return pointerIcons;
+        }
     }
 }
+
