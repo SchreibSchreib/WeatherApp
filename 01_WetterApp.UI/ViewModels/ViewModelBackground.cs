@@ -8,9 +8,7 @@ namespace _01_WetterApp.UI.ViewModels
     class ViewModelBackground : INotifyPropertyChanged
     {
         private string _backgroundImagePath;
-        private string _hourIconPath;
-        private string _minuteIconPath;
-        private string _secondIconPath;
+        private string[] _iconPaths;
 
         public string BackgroundImagePath
         {
@@ -25,51 +23,25 @@ namespace _01_WetterApp.UI.ViewModels
             }
         }
 
-        public string HourIconPath
+        public string[] IconPaths
         {
-            get { return _hourIconPath; }
+            get { return _iconPaths; }
             set
             {
-                if (_hourIconPath != value)
+                if (!Array.Equals(_iconPaths, value))
                 {
-                    _hourIconPath = value;
-                    OnPropertyChanged(nameof(IconPath));
+                    _iconPaths = value;
+                    OnPropertyChanged(nameof(IconPaths));
                 }
             }
         }
 
-        public string MinuteIconPath
-        {
-            get { return _minuteIconPath; }
-            set
-            {
-                if (_hourIconPath != value)
-                {
-                    _hourIconPath = value;
-                    OnPropertyChanged(nameof(IconPath));
-                }
-            }
-        }
 
-        public string SecondIconPath
-        {
-            get { return _secondIconPath; }
-            set
-            {
-                if (_hourIconPath != value)
-                {
-                    _hourIconPath = value;
-                    OnPropertyChanged(nameof(IconPath));
-                }
-            }
-        }
 
-        public ViewModelBackground(BackgroundImagePath pathOfImage,IconPath iconPath)
+        public ViewModelBackground(BackgroundImagePath pathOfImage, IconPath iconPath)
         {
             _backgroundImagePath = pathOfImage.Get;
-            _hourIconPath = iconPath.Get[0];
-            _minuteIconPath = iconPath.Get[1];
-            _secondIconPath = iconPath.Get[2];
+            _iconPaths = iconPath.Get;
         }
 
         public event PropertyChangedEventHandler? PropertyChanged;
