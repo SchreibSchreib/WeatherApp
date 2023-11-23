@@ -46,7 +46,7 @@ namespace _01_WetterApp.UI
         {
             DispatcherTimer timer = new DispatcherTimer();
             timer.Tick += OnTimerTick;
-            timer.Interval = new TimeSpan(0, 0, 0, 0, 400);
+            timer.Interval = new TimeSpan(0, 0, 0, 0, 100);
             timer.Start();
             return timer;
         }
